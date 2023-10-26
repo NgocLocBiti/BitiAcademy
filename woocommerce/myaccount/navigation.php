@@ -38,9 +38,9 @@ do_action('woocommerce_before_account_navigation');
 <script>
 	var icons = [
 		'far fa-user',
-		'fal fa-luggage-cart',
-		'far fa-cloud-download-alt',
-		'fal fa-map-marker-alt',
+		'far fa-shopping-cart',
+		'far fa-download',
+		'far fa-map-marked-alt',
 		'far fa-user-edit',
 		'far fa-sign-out-alt'
 	];

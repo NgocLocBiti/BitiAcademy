@@ -119,7 +119,7 @@ do_action('woocommerce_before_edit_account_form'); ?>
 							<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" autocomplete="off" />
 						</p>
 						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-							<label for="password_2"><?php esc_html_e('Xác nhận lại mật khẩ', 'woocommerce'); ?></label>
+							<label for="password_2"><?php esc_html_e('Xác nhận lại mật khẩu', 'woocommerce'); ?></label>
 							<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" autocomplete="off" />
 						</p>
 					</fieldset>
@@ -283,6 +283,42 @@ do_action('woocommerce_before_edit_account_form'); ?>
 	}
 
 	.thongtin-account .bg .tab-content .info p button:hover {
+		box-shadow: -5px 5px 5px 0px #8888;
+		transform: translateY(-4px);
+		will-change: box-shadow, transform;
+	}
+
+	/* Thay đổi mật khẩu */
+	/* .thongtin-account .bg .tab-content .changepass p {
+		display: flex;
+	} */
+
+	.thongtin-account .bg .tab-content .changepass p label {
+		color: var(--Black-4-Text, #404040);
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		width: 100%;
+	}
+
+	.thongtin-account .bg .tab-content .changepass p input {
+		border-radius: 5px;
+		color: #404040;
+		font-size: 16px;
+		padding: 5px;
+		border: 2px solid #c1c1c1;
+	}
+
+	.thongtin-account .bg .tab-content .changepass p button {
+		margin-top: 30px;
+		border-radius: 8px;
+		border: 2px solid #1388ED;
+		color: #1388ed;
+		background: #FFF;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.thongtin-account .bg .tab-content .changepass p button:hover {
 		box-shadow: -5px 5px 5px 0px #8888;
 		transform: translateY(-4px);
 		will-change: box-shadow, transform;

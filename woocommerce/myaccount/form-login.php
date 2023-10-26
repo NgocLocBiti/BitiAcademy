@@ -44,7 +44,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 									echo 'Bạn đã đăng nhập rồi. <a href="' . wp_logout_url($home_url) . '">Đăng xuất</a> ?';
 								} else {
 								?>
-									<h1>Đăng ký</h1>
+									<h1>ĐĂNG KÝ</h1>
 									<form id="hk-registerform" action="<?php echo get_home_url() . '/dang-ky'; ?>">
 										<?php wp_nonce_field('form_register'); ?>
 										<div id="hk-message"></div>
@@ -89,7 +89,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 					<!-- ĐĂNG NHẬP -->
 					<div class="col-lg-4" id="id_dangnhap">
 						<div class="dang_nhap_main">
-							<h2><?php esc_html_e('Login', 'woocommerce'); ?></h2>
+							<h2><?php esc_html_e('ĐĂNG NHẬP', 'woocommerce'); ?></h2>
 							<form class="woocommerce-form woocommerce-form-login login" method="post">
 								<?php do_action('woocommerce_login_form_start'); ?>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -188,7 +188,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 <style>
 	.woocommerce {
-		padding-top: 120px;
+		padding-top: 20px;
 	}
 
 	#username {
@@ -306,7 +306,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	.section-inner h1 {
 		font-size: 35px;
 		margin-bottom: 15px;
-		color: #012C4D;
+		color: #1388ED;
 	}
 
 	label {
@@ -328,7 +328,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 		/* padding-bottom: 20px; */
 		font-size: 35px;
 		margin-bottom: 15px;
-		color: #012C4D;
+		color: #1388ED;
 	}
 
 	.dang_nhap_main form.login {

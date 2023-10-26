@@ -3344,56 +3344,58 @@ main {
   background: #f0f0f0; }
   .account-detail .account-main-wrap {
     margin-top: 30px; }
-    .account-detail .account-main-wrap .entry-content .account-breadcrumb {
-      padding: 130px 0px; }
-      .account-detail .account-main-wrap .entry-content .account-breadcrumb img {
-        border-radius: 16px;
-        width: 100%;
-        height: 250px; }
-      .account-detail .account-main-wrap .entry-content .account-breadcrumb .avatar-account {
+    .account-detail .account-main-wrap .entry-content {
+      padding: 140px 0px 0px 0px; }
+      .account-detail .account-main-wrap .entry-content .account-breadcrumb {
+        padding-bottom: 110px; }
+        .account-detail .account-main-wrap .entry-content .account-breadcrumb img {
+          border-radius: 16px;
+          width: 100%;
+          height: 250px; }
+        .account-detail .account-main-wrap .entry-content .account-breadcrumb .avatar-account {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          flex-direction: column;
+          position: absolute;
+          top: 265px;
+          left: 0; }
+          .account-detail .account-main-wrap .entry-content .account-breadcrumb .avatar-account .avatar_img {
+            border: 5px solid #fff;
+            border-radius: 50%; }
+            .account-detail .account-main-wrap .entry-content .account-breadcrumb .avatar-account .avatar_img img {
+              border-radius: 50%;
+              width: 200px;
+              height: 200px; }
+      .account-detail .account-main-wrap .entry-content #sidebar_accout {
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 8px 8px 5px 0px #8888;
+        background: #FFF;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         flex-direction: column;
-        position: absolute;
-        top: 265px;
-        left: 0; }
-        .account-detail .account-main-wrap .entry-content .account-breadcrumb .avatar-account .avatar_img {
-          border: 5px solid #fff;
-          border-radius: 50%; }
-          .account-detail .account-main-wrap .entry-content .account-breadcrumb .avatar-account .avatar_img img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px; }
-    .account-detail .account-main-wrap .entry-content #sidebar_accout {
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 8px 8px 5px 0px #8888;
-      background: #FFF;
-      display: flex;
-      flex-direction: column;
-      gap: 5px; }
-      .account-detail .account-main-wrap .entry-content #sidebar_accout li {
-        list-style-type: none;
-        font-size: 20px;
-        background: #fff;
-        border-radius: 5px;
-        padding: 6px 20px;
-        font-weight: bold; }
-        .account-detail .account-main-wrap .entry-content #sidebar_accout li i {
-          margin-right: 15px;
-          width: 30px;
-          font-size: 25px;
-          text-align: center; }
-        .account-detail .account-main-wrap .entry-content #sidebar_accout li a {
-          color: var(--Black-4-Text, #404040);
-          font-size: 20px; }
-      .account-detail .account-main-wrap .entry-content #sidebar_accout .is-active {
-        background: #6bafe9;
-        color: #fff; }
-        .account-detail .account-main-wrap .entry-content #sidebar_accout .is-active a {
+        gap: 5px; }
+        .account-detail .account-main-wrap .entry-content #sidebar_accout li {
+          list-style-type: none;
+          font-size: 20px;
+          background: #fff;
+          border-radius: 5px;
+          padding: 6px 20px;
+          font-weight: bold; }
+          .account-detail .account-main-wrap .entry-content #sidebar_accout li i {
+            margin-right: 15px;
+            width: 30px;
+            font-size: 25px;
+            text-align: center; }
+          .account-detail .account-main-wrap .entry-content #sidebar_accout li a {
+            color: var(--Black-4-Text, #404040);
+            font-size: 20px; }
+        .account-detail .account-main-wrap .entry-content #sidebar_accout .is-active {
+          background: #6bafe9;
           color: #fff; }
+          .account-detail .account-main-wrap .entry-content #sidebar_accout .is-active a {
+            color: #fff; }
 
 .footer-top {
   height: 360px;
