@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="phoneNumberInput" placeholder="Nhập số điện thoại" />
+    <button id="submitBtn">Submit</button>
+    <div id="displayPhoneNumber"></div>
+
+</body>
+
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var phoneNumberInput = document.getElementById('phoneNumberInput');
+        var submitBtn = document.getElementById('submitBtn');
+        var displayPhoneNumber = document.getElementById('displayPhoneNumber');
+
+        submitBtn.addEventListener('click', function () {
+            var phoneNumber = phoneNumberInput.value;
+            displayPhoneNumber.textContent = phoneNumber;
+        });
+    });
+</script>

@@ -1,0 +1,280 @@
+@import "sidebar-tintuc";
+
+.section-tintuc {
+    padding: 180px 0px 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--White-2-BGR, #F2F2F2);
+
+    @media screen and (max-width: 990px) {
+        padding: 110px 0px 40px 0;
+    }
+
+    &-search {
+        input {
+            display: flex;
+            height: 50px;
+            padding: 8px 12px;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            border-radius: 10px !important;
+            background: var(--White, #FFF);
+            font-size: 16px;
+            border: 1px solid #1388ED;
+        }
+
+        button {
+            position: absolute;
+            top: 25%;
+            right: 3%;
+            border: none;
+            background: #fff;
+
+            i {
+                color: #1388ED;
+            }
+        }
+    }
+
+    .center {
+        @media screen and (max-width: 990px) {
+            display: none !important;
+        }
+    }
+
+
+    .item {
+        display: flex;
+        position: relative;
+        height: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+            /* Khi hover, ảnh trở nên lớn hơn (trồi lên) */
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.45);
+        }
+
+        a {
+            width: 100%;
+
+            .img {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .content {
+                border-radius: 10px;
+                display: flex;
+                width: 100%;
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                background: linear-gradient(180deg, rgba(34, 36, 41, 0.00) 0%, #222429 100%);
+                position: absolute;
+                bottom: 0;
+                gap: 9px;
+
+                h2 {
+                    color: var(--White, #FFF);
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0;
+                }
+
+                .thoi-gian {
+                    display: flex;
+                    width: 35%;
+                    justify-content: space-between;
+
+                    p {
+                        display: flex;
+                        align-items: baseline;
+                        gap: 7px;
+                        color: var(--White, #FFF);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        margin: 0;
+                    }
+                }
+
+                .noi_dung {
+                    overflow: hidden;
+                    color: var(--White, #FFF);
+                    text-align: justify;
+                    text-overflow: ellipsis;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin: 0;
+                    -webkit-line-clamp: 3;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        @media screen and (max-width: 990px) {
+            display: none !important;
+        }
+
+        .item {
+            display: flex;
+            position: relative;
+            border-radius: 10px;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+                /* Khi hover, ảnh trở nên lớn hơn (trồi lên) */
+                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.45);
+            }
+
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .content {
+                border-radius: 10px;
+                display: flex;
+                width: 100%;
+                padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+                background: linear-gradient(180deg, rgba(34, 36, 41, 0.00) 0%, #222429 100%);
+                position: absolute;
+                bottom: 0;
+                gap: 9px;
+
+                h2 {
+                    color: var(--White, #FFF);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                .thoi-gian {
+                    display: flex;
+                    width: 70%;
+                    justify-content: space-between;
+
+                    p {
+                        display: flex;
+                        align-items: baseline;
+                        gap: 7px;
+                        color: var(--White, #FFF);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        height: 2px;
+        background: #373636;
+    }
+
+    .items_tintuc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        border-radius: 10px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+            /* Khi hover, ảnh trở nên lớn hơn (trồi lên) */
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.45);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            padding: 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            background: var(--White, #FFF);
+            gap: 5px;
+            border-radius: 0px 0px 10px 10px;
+
+            h2 {
+                color: var(--Black-4-Text, #404040);
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                /* 133.333% */
+                margin: 0;
+            }
+
+            .thoi-gian {
+                display: flex;
+                width: 50%;
+                justify-content: space-between;
+
+                p {
+                    display: flex;
+                    align-items: baseline;
+                    gap: 7px;
+                    color: var(--Black-4-Text, #404040);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    /* 150% */
+                    margin: 0;
+                }
+            }
+
+            .noi_dung {
+                color: var(--Black-4-Text, #404040);
+                text-align: justify;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 150% */
+                margin: 0;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+}

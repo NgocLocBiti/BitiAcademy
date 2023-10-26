@@ -1,4 +1,5 @@
 <?php
+
 /**
  * My Account navigation
  *
@@ -15,21 +16,42 @@
  * @version 2.6.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
-do_action( 'woocommerce_before_account_navigation' );
+do_action('woocommerce_before_account_navigation');
 ?>
 
 <nav class="woocommerce-MyAccount-navigation">
-	<ul>
-		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
-			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
-				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
+	<ul id="sidebar_accout">
+		<?php foreach (wc_get_account_menu_items() as $endpoint => $label) : ?>
+			<li class="<?php echo wc_get_account_menu_item_classes($endpoint); ?>">
+				<a href="<?php echo esc_url(wc_get_account_endpoint_url($endpoint)); ?>"><?php echo esc_html($label); ?></a>
 			</li>
 		<?php endforeach; ?>
 	</ul>
 </nav>
 
-<?php do_action( 'woocommerce_after_account_navigation' ); ?>
+<?php do_action('woocommerce_after_account_navigation'); ?>
+
+<script>
+	var icons = [
+		'far fa-user',
+		'fal fa-luggage-cart',
+		'far fa-cloud-download-alt',
+		'fal fa-map-marker-alt',
+		'far fa-user-edit',
+		'far fa-sign-out-alt'
+	];
+
+	var menuItems = document.querySelectorAll('#sidebar_accout li');
+
+	menuItems.forEach(function(item, index) {
+		if (index < icons.length) {
+			var iconElement = document.createElement('i');
+			iconElement.className = icons[index];
+			item.insertBefore(iconElement, item.firstChild);
+		}
+	});
+</script>

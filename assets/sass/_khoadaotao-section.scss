@@ -1,0 +1,306 @@
+.khoadaotao-section {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    background: #F2F2F2;
+
+    .container {
+        .bg {
+            display: block;
+
+            @media screen and (max-width: 420px) {
+                display: none !important;
+            }
+
+            .container {
+                border-radius: 12px;
+                background: linear-gradient(90deg, #04C 0%, #006EFF 100%);
+
+
+                .nav-item {
+                    position: relative;
+
+                    .nav-link {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #fff;
+                        padding: 24px 58px;
+                        margin: 0px 5px;
+
+                        @media screen and (max-width: 990px) {
+                            padding: 24px 15px !important;
+                            font-size: 18px !important;
+                        }
+
+                        @media screen and (max-width: 769px) {
+                            padding: 24px 9px !important;
+                            font-size: 18px !important;
+                        }
+
+                        @media screen and (max-width: 420px) {
+                            padding: 24px 100px !important;
+                            font-size: 18px !important;
+                        }
+                    }
+
+                    .nav-link.active {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #ffff;
+                        border-radius: 8px;
+                        padding: 24px 58px;
+                        border-right: 1px solid var(--Lieaner, #04C);
+                        background: var(--Lieaner, linear-gradient(90deg, #04C 0%, #006EFF 100%));
+
+                        @media screen and (max-width: 990px) {
+                            padding: 24px 15px !important;
+                            font-size: 18px !important;
+                        }
+
+                        @media screen and (max-width: 769px) {
+                            padding: 24px 7px !important;
+                            font-size: 18px !important;
+                        }
+
+                        @media screen and (max-width: 420px) {
+                            padding: 24px 100px !important;
+                            font-size: 18px !important;
+                        }
+                    }
+
+                    .after::after {
+                        content: "";
+                        border-right: #c4c4c4 solid 2px;
+                        height: 57px;
+                        position: absolute;
+                        right: 0;
+                        top: 8px;
+
+                        @media screen and (max-width: 420px) {
+                            border-right: none !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            margin-top: 30px;
+
+            .tatcakhoahoc {
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: #404040;
+                        text-align: center;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    a {
+                        color: #404040;
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .bottom {
+                    padding: 25px 0px;
+
+                    .item {
+                        background: #FFF;
+                        border-radius: 14px;
+                        transition: transform 0.3s;
+
+                        &:hover {
+                            transform: scale(1.05);
+                            /* Khi hover, ảnh trở nên lớn hơn (trồi lên) */
+                            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.45);
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 14px 14px 0 0;
+
+                            @media screen and (max-width: 990px) {
+                                height: 200px !important;
+
+                            }
+                        }
+
+                        .info {
+                            display: flex;
+                            padding: 12px 24px;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            @media screen and (max-width: 990px) {
+                                padding: 10px 10px !important;
+                            }
+
+                            h4 {
+                                color: #404040;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 24px;
+                            }
+
+                            .star {
+                                display: flex;
+
+                                p {
+                                    margin-left: 10px;
+                                    color: #404040;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .course_time {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                            }
+
+                            p {
+                                color: #404040;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                                /* 142.857% */
+
+                                span {
+                                    color: #1388ED;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .select-mobi {
+            display: none;
+
+            @media screen and (max-width: 420px) {
+                display: block !important;
+            }
+        }
+
+        .khoa-hoc-mobile {
+            .tatcakhoahoc {
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: #404040;
+                        text-align: center;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    a {
+                        color: #404040;
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .bottom {
+                    padding: 25px 0px;
+
+                    .item {
+                        background: #FFF;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+
+                            @media screen and (max-width: 990px) {
+                                height: 200px !important;
+
+                            }
+                        }
+
+                        .info {
+                            display: flex;
+                            padding: 12px 24px;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            @media screen and (max-width: 990px) {
+                                padding: 10px 10px !important;
+                            }
+
+                            h4 {
+                                color: #404040;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 24px;
+                            }
+
+                            .star {
+                                display: flex;
+
+                                p {
+                                    margin-left: 10px;
+                                    color: #404040;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .course_time {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                            }
+
+                            p {
+                                color: #404040;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                                /* 142.857% */
+
+                                span {
+                                    color: #1388ED;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

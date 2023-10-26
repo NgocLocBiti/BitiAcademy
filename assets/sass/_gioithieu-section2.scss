@@ -1,0 +1,24 @@
+.gioithieu-section2 {
+    background: #F2F2F2;
+    padding-top: 20px;
+
+    .images {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        width: 100%;
+
+        img {
+            width: 400px;
+            height: 300px;
+
+            @media screen and (max-width: 990px) {
+                height: 180px;
+            }
+
+            @media screen and (max-width: 420px) {
+                height: 90px;
+            }
+        }
+    }
+}

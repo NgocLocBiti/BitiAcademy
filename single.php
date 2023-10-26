@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?>
 
 <main class="tintuc tintuc-detail">
     <?php
@@ -116,4 +116,4 @@
 
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> -->

@@ -1,0 +1,27 @@
+.gioithieu-banner {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    @media screen and (max-width: 990px) {
+        height: 350px;
+    }
+    @media screen and (max-width: 420px) {
+        height: 250px;
+    }
+
+
+    img {
+        width: 100%;
+        height: 500px;
+
+        @media screen and (max-width: 990px) {
+            height: 350px;
+        }
+        @media screen and (max-width: 420px) {
+            height: 250px;
+        }
+    }
+}

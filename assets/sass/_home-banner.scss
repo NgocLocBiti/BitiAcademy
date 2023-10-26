@@ -1,0 +1,259 @@
+.home-banner {
+    width: 100%;
+    height: 690px;
+    align-self: stretch;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 690px;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+
+    &-introduce {
+        display: flex;
+        width: 522px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        position: absolute;
+        top: 220px;
+        left: 185px;
+
+        @media screen and (max-width: 990px) {
+            width: 490px;
+            gap: 5px;
+            top: 170px;
+            left: 40px;
+        }
+
+        @media screen and (max-width: 420px) {
+            width: 345px;
+            gap: 5px;
+            top: 160px;
+            left: 10px;
+        }
+
+        h3 {
+            color: #0065EA;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            @media screen and (max-width: 990px) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: 420px) {
+                font-size: 30px;
+            }
+        }
+
+
+        p {
+            color: #404040;
+            text-align: justify;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+
+            @media screen and (max-width: 990px) {
+                font-size: 14px;
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+
+            @media screen and (max-width: 990px) {
+                gap: 15px;
+            }
+
+            .vechungtoi {
+
+                button,
+                button *,
+                button :after,
+                button :before,
+                button:after,
+                button:before {
+                    border: 0 solid;
+                    box-sizing: border-box;
+                }
+
+                button {
+                    -webkit-tap-highlight-color: transparent;
+                    -webkit-appearance: button;
+                    background-color: #0065EA;
+                    background-image: none;
+                    font-size: 100%;
+                    padding: 21px 60px;
+                }
+
+                button:disabled {
+                    cursor: default;
+                }
+
+                button:-moz-focusring {
+                    outline: auto;
+                }
+
+                button svg {
+                    display: block;
+                    vertical-align: middle;
+                }
+
+                button [hidden] {
+                    display: none;
+                }
+
+                button {
+                    background: none;
+                    box-sizing: border-box;
+                    color: #000;
+                    display: block;
+                    font-weight: bold;
+                    -webkit-mask-image: none;
+                    padding: 21.6px 60px;
+                    position: relative;
+                }
+
+                button span {
+                    background: #fff;
+                    border: 2px solid #0065EA;
+                    border-radius: 8px;
+                    display: grid;
+                    inset: 0;
+                    place-items: center;
+                    pointer-events: none;
+                    position: absolute;
+                    color: #0065EA;
+                }
+
+                button:hover span {
+                    -webkit-animation: tada 0.8s;
+                    animation: tada 0.8s;
+                }
+
+                @-webkit-keyframes tada {
+                    0% {
+                        transform: scaleX(1);
+                    }
+
+                    10%,
+                    20% {
+                        transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+                    }
+
+                    30%,
+                    50%,
+                    70%,
+                    90% {
+                        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+                    }
+
+                    40%,
+                    60%,
+                    80% {
+                        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+                    }
+
+                    to {
+                        transform: scaleX(1);
+                    }
+                }
+
+                @keyframes tada {
+                    0% {
+                        transform: scaleX(1);
+                    }
+
+                    10%,
+                    20% {
+                        transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+                    }
+
+                    30%,
+                    50%,
+                    70%,
+                    90% {
+                        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+                    }
+
+                    40%,
+                    60%,
+                    80% {
+                        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+                    }
+
+                    to {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+
+
+            // ---------------------------------------------
+            .khoadaotao {
+                display: flex;
+                width: 125px;
+                padding: 8px 8px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                background: #0065EA;
+                color: white;
+                font-weight: bold;
+                position: relative;
+                overflow: hidden;
+                border: 2px solid #0065EA;
+
+                &:hover {
+                    border: 2px solid #404041;
+                }
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    content: '';
+                }
+
+                &:before {
+                    background: #fff;
+                    border: none;
+                    transform: translate3d(-102%, 0, 0);
+                    transition: transform .3s ease-in;
+                }
+
+                &:after {
+                    background: #404041;
+                    border: 2px solid #404041;
+                    transform: translate3d(101%, 0, 0);
+                    transition: transform .25s ease-out .29s;
+                }
+
+                span {
+                    position: relative;
+                    z-index: 5;
+                }
+
+                &:hover {
+
+                    &:before,
+                    &:after {
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+}

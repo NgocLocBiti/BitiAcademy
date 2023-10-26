@@ -1,0 +1,51 @@
+.gioithieu-section3 {
+    background: #F2F2F2;
+    padding: 48px 0px;
+
+    .container {
+        .title {
+            display: flex;
+            padding: 24px 0px;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+            h1 {
+                color: #404040;
+                text-align: center;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p {
+                color: #404040;
+                text-align: center;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .content {
+            .row {
+                .item {
+                    display: flex;
+                    padding: 16px;
+                    align-items: center;
+                    border-radius: 16px;
+                    gap:30px;
+                    background: #FFF;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 500px;
+                    }
+                }
+            }
+        }
+    }
+}

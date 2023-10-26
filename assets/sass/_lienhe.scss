@@ -1,0 +1,181 @@
+.lienhe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #F2F2F2;
+    padding: 48px 0;
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        flex: 1 0 0;
+    }
+
+    h1 {
+        color: var(--Blue-w, #1388ED);
+        font-size: 38px;
+        font-style: normal;
+        font-weight: bold;
+        /* 78.75% */
+    }
+
+    &-info {
+        p {
+            color: #333;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0px 0px 7px 0px;
+
+            span {
+                color: #333;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+
+                /* 150% */
+            }
+        }
+    }
+
+    &-icon {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    p {
+        color: #333;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0px 0px 7px 0px;
+
+    }
+
+    form .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*căn lề 2 bên*/
+    }
+
+    form .inputBox input,
+    form textarea {
+        padding: 10px;
+        margin: 0;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        text-transform: none;
+        width: 95%;
+        border-radius: 5px;
+        border: 0.75px solid #CED4DA;
+        background: #FFF;
+    }
+
+    form textarea {
+        width: 97.5%;
+        resize: none;
+        height: 15rem;
+    }
+
+    form .content {
+        height: 150px;
+    }
+
+    form .gui-lien-he {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        width: 25%;
+        display: flex;
+        padding: 9px 28px 9px 28px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: var(--Lieaner, linear-gradient(90deg, #04C 0%, #006EFF 100%));
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    form .gui-lien-he:hover {
+        -webkit-animation: tada 0.8s;
+        animation: tada 0.8s;
+    }
+
+    @-webkit-keyframes tada {
+        0% {
+            transform: scaleX(1);
+        }
+
+        10%,
+        20% {
+            transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+        }
+
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        }
+
+        40%,
+        60%,
+        80% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        }
+
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes tada {
+        0% {
+            transform: scaleX(1);
+        }
+
+        10%,
+        20% {
+            transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+        }
+
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        }
+
+        40%,
+        60%,
+        80% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        }
+
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 522px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25) inset;
+        background: #808080;
+    }
+
+    .wpcf7-response-output {
+        border-color: #46b450;
+        font-weight: bold;
+        border-radius: 10px;
+        margin: 0!important;
+    }
+
+}

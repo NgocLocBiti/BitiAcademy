@@ -1,0 +1,56 @@
+.sidebar-news {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 10px;
+    background: var(--White, #FFF);
+
+    h3 {
+        color: #1388ED;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+    }
+
+    a {
+        width: 100%;
+
+        button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: var(--Gray-2, #4F4F4F);
+            font-size: 18px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            i {
+                font-size: 18px;
+                position: relative;
+                top: 4px;
+            }
+
+            &:hover {
+                background-color: #92ccff;
+                color: #FFF;
+            }
+
+            &:hover i {
+                color: #FFF;
+            }
+
+            &.active_tintuc {
+                border-left: 3px solid var(--Blue-w, #1388ED);
+                background: var(--Trng, #FFF);
+                color: #1388ED;
+                font-weight: bolD;
+            }
+        }
+    }
+}

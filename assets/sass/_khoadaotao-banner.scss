@@ -1,0 +1,24 @@
+.khoadaotao-banner {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    background: #F2F2F2;
+
+    .container {
+        img {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+
+            @media screen and (max-width: 990px) {
+                height: 200px !important;
+            }
+
+            @media screen and (max-width: 420px) {
+                height: 150px !important;
+            }
+        }
+    }
+}
