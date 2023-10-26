@@ -92,16 +92,16 @@ function hk_handle_register_form()
 
 // Lấy số điện thoại
 
-add_action('wp_ajax_save_phone', 'save_phone');
-add_action('wp_ajax_nopriv_save_phone', 'save_phone');
-function save_phone()
-{
-    $phoneNumber  = $_POST['phone_number'];
-    if (is_user_logged_in()) {
-        $user_id = get_current_user_id();
-        update_field('phone', $phoneNumber, 'user_' . $user_id);
-    } else {
-        wp_send_json_error('User is not logged in.');
-    }
-    wp_die();
-}
+// add_action('wp_ajax_save_phone', 'save_phone');
+// add_action('wp_ajax_nopriv_save_phone', 'save_phone');
+// function save_phone()
+// {
+//     $phoneNumber  = $_POST['phone_number'];
+//     if (is_user_logged_in()) {
+//         $user_id = get_current_user_id();
+//         update_field('phone', $phoneNumber, 'user_' . $user_id);
+//     } else {
+//         wp_send_json_error('User is not logged in.');
+//     }
+//     wp_die();
+// }

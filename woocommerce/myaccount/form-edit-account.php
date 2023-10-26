@@ -63,13 +63,13 @@ do_action('woocommerce_before_edit_account_form'); ?>
 							$user_id = get_current_user_id();
 							$userPhone = get_field('phone', 'user_' . $user_id);
 
-							?> -->
+							?>
 					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 						<label for="account_billing_phone"><?php esc_html_e('Số điện thoại', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
 						<input type="tel" class="woocommerce-Input woocommerce-Input--text input-text" name="account_phone" id="account_phone" autocomplete="given-name" value="<?php echo (isset($userPhone)) ? $userPhone  : ""; ?>" />
 
-						<!-- <input type="text" name="account_phone" id="account_phone" value="<?php echo (isset($userPhone)) ? $userPhone  : ""; ?>" /> -->
-					</p>
+						<input type="text" name="account_phone" id="account_phone" value="<?php echo (isset($userPhone)) ? $userPhone  : ""; ?>" />
+					</p> -->
 
 					<div class="clear"></div>
 
