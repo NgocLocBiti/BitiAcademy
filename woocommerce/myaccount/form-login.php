@@ -94,8 +94,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 								<?php do_action('woocommerce_login_form_start'); ?>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 									<label for="username"><?php esc_html_e('Username or email address', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-									<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>" /><?php // @codingStandardsIgnoreLine 
-																																																																				?>
+									<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
 								</p>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 									<label for="password"><?php esc_html_e('Password', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
@@ -292,14 +291,17 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 	.login_wrap {
 		background-color: #fff;
-		box-shadow: 0 0 40px 0 rgba(0, 0, 0, 1.2);
+		box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 		max-width: 850px;
 		margin: 0 auto;
+		border-radius: 16px;
 	}
 
 	.login_wrap img {
 		height: 100% !important;
 		width: 100%;
+		border-top-right-radius: 16px;
+		border-bottom-right-radius: 16px;
 	}
 
 
@@ -320,8 +322,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 		margin: 0 auto;
 		padding: 20px 0px 20px 20px;
 		background-color: #ffffff;
-		border-radius: 5px;
-
+		border-radius: 16px;
 	}
 
 	.dang_nhap_main h2 {
@@ -420,7 +421,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	/* ddawng kis */
 	#site-content {
 		background-color: #fff;
-		border-radius: 5px;
+		border-radius: 15px;
 	}
 
 	.section-inner {
