@@ -36,61 +36,61 @@ do_action('woocommerce_before_edit_account_form'); ?>
 			<!-- Thông tin tài khoản -->
 			<div class="tab-pane fade show active info" id="pills-info-account" role="tabpanel" aria-labelledby="pills-info-account-tab" tabindex="0">
 				<form class="woocommerce-EditAccountForm edit-account" action="" method="post" <?php do_action('woocommerce_edit_account_form_tag'); ?>>
-					<div class="info_account">
-						<?php do_action('woocommerce_edit_account_form_start'); ?>
 
-						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-							<label for="account_id"><?php esc_html_e('Id tài khoản', 'woocommerce'); ?>&nbsp;</label>
-							<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_id" id="account_id" autocomplete="family-name" value="<?php echo esc_attr($user->id); ?>" readonly />
-						</p>
-						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-							<label for="account_last_name"><?php esc_html_e('Last name', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-							<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" autocomplete="family-name" value="<?php echo esc_attr($user->last_name); ?>" />
-						</p>
+					<?php do_action('woocommerce_edit_account_form_start'); ?>
 
-						<div class="clear"></div>
-
-						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-							<label for="account_first_name"><?php esc_html_e('First name', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-							<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr($user->first_name); ?>" />
-						</p>
-
-						<div class="clear"></div>
-
-						<!-- <?php
-								$user_id = get_current_user_id();
-								$userPhone = get_field('phone', 'user_' . $user_id);
-
-								?>
 					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="account_id"><?php esc_html_e('Id tài khoản', 'woocommerce'); ?>&nbsp;</label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_id" id="account_id" autocomplete="family-name" value="<?php echo esc_attr($user->id); ?>" readonly />
+					</p>
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="account_last_name"><?php esc_html_e('Last name', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" autocomplete="family-name" value="<?php echo esc_attr($user->last_name); ?>" />
+					</p>
+
+					<div class="clear"></div>
+
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="account_first_name"><?php esc_html_e('First name', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr($user->first_name); ?>" />
+					</p>
+
+					<div class="clear"></div>
+
+					<!-- <?php
+							$user_id = get_current_user_id();
+							$userPhone = get_field('phone', 'user_' . $user_id);
+
+							?>
+						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 						<label for="account_billing_phone"><?php esc_html_e('Số điện thoại', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
 						<input type="tel" class="woocommerce-Input woocommerce-Input--text input-text" name="account_phone" id="account_phone" autocomplete="given-name" value="<?php echo (isset($userPhone)) ? $userPhone  : ""; ?>" />
 
 						<input type="text" name="account_phone" id="account_phone" value="<?php echo (isset($userPhone)) ? $userPhone  : ""; ?>" />
-					</p> -->
+						</p> -->
 
-						<div class="clear"></div>
-
-						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-							<label for="account_display_name"><?php esc_html_e('Display name', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-							<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="<?php echo esc_attr($user->display_name); ?>" />
-						</p>
-						<span><em><?php esc_html_e('This will be how your name will be displayed in the account section and in reviews', 'woocommerce'); ?></em></span>
-
-						<div class="clear"></div>
-
-						<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-							<label for="account_email"><?php esc_html_e('Email address', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-							<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="<?php echo esc_attr($user->user_email); ?>" />
-						</p>
-					</div>
 					<div class="clear"></div>
 
-					<div id="change-password">
-						THAY ĐỔI MẬT KHẨU
-					</div>
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="account_display_name"><?php esc_html_e('Display name', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="<?php echo esc_attr($user->display_name); ?>" />
+					</p>
+					<span><em><?php esc_html_e('This will be how your name will be displayed in the account section and in reviews', 'woocommerce'); ?></em></span>
 
-					<div class="row changepass">
+					<div class="clear"></div>
+
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="account_email"><?php esc_html_e('Email address', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
+						<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="<?php echo esc_attr($user->user_email); ?>" />
+					</p>
+
+					<div class="clear"></div>
+
+					<h2 id="change-password">
+						THAY ĐỔI MẬT KHẨU
+					</h2>
+
+					<div class="row" id="changepass">
 						<div class="col-8 pt-2">
 							<fieldset>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -257,7 +257,7 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		// Lắng nghe sự kiện khi người dùng kích vào div với ID "change-password"
 		document.getElementById("change-password").addEventListener("click", function() {
 			// Lấy ra div changepass
-			var changepassDiv = document.querySelector(".changepass");
+			var changepassDiv = document.getElementById("changepass");
 
 			// Kiểm tra nếu đang ẩn, thì hiển thị, và ngược lại
 			if (changepassDiv.style.display === "none") {
@@ -373,6 +373,8 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		box-shadow: -5px 5px 5px 0px #8888;
 		transform: translateY(-4px);
 		will-change: box-shadow, transform;
+		background: #1388ED;
+		color: #fff;
 	}
 
 	/* Thay đổi mật khẩu */
@@ -381,24 +383,25 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		color: #1388ED;
 		font-weight: bold;
 		margin-top: 30px;
-		font-size: 20px;
+		font-size: 18px;
 		margin-bottom: 20px;
+		text-align: end;
 	}
 
 	#change-password:hover {
 		cursor: pointer;
 	}
 
-	.thongtin-account .bg .tab-content .changepass {
+	.thongtin-account .bg .tab-content #changepass {
 		display: none;
 	}
 
-	.thongtin-account .bg .tab-content .changepass p {
+	.thongtin-account .bg .tab-content #changepass p {
 		display: flex;
 		/* flex-direction: column; */
 	}
 
-	.thongtin-account .bg .tab-content .changepass p label {
+	.thongtin-account .bg .tab-content #changepass p label {
 		color: var(--Black-4-Text, #404040);
 		font-size: 18px;
 		font-style: normal;
@@ -410,7 +413,7 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		width: 100%;
 	}
 
-	.thongtin-account .bg .tab-content .changepass p input {
+	.thongtin-account .bg .tab-content #changepass p input {
 		border-radius: 5px;
 		color: #404040;
 		font-size: 16px;

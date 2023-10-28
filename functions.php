@@ -202,3 +202,21 @@ function hk_custom_user_avatar($avatar, $id_or_email, $size, $alt, $args)
 
     return $avatar;
 }
+
+// Xóa các trường không cần thiết
+add_filter('woocommerce_checkout_fields', 'custom_override_checkout_fields', 99);
+function custom_override_checkout_fields($fields)
+{
+
+    //Danh sách field cần xóa ở đây
+    // shipping
+    unset($fields['shipping']['shipping_company']);
+    unset($fields['shipping']['shipping_address_2']);
+    unset($fields['shipping']['shipping_postcode']);
+    // billing
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_company']);
+
+    return $fields;
+}

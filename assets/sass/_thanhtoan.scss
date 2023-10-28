@@ -1,0 +1,62 @@
+.has-checkout-layout--multi-step .fc-checkout-step[data-step-current]>div:first-of-type {
+    display: none;
+}
+
+body.woocommerce-checkout .fc-content,
+body.woocommerce-checkout .fc-content * .checkbox {
+    display: none
+}
+
+.fc-checkout-steps {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -10px 10px 0px 0px #b3b3b359;
+    background: #FFF;
+}
+
+.has-checkout-layout--multi-step .fc-checkout-step .fc-step__substep:first-of-type {
+    background-color: #ffff !important;
+}
+
+.div.woocommerce form .form-row .select2-selection,
+div.woocommerce form .form-row input[type=date],
+div.woocommerce form .form-row input[type=email],
+div.woocommerce form .form-row input[type=number],
+div.woocommerce form .form-row input[type=password],
+div.woocommerce form .form-row input[type=search],
+div.woocommerce form .form-row input[type=tel],
+div.woocommerce form .form-row input[type=text],
+div.woocommerce form .form-row input[type=url],
+div.woocommerce form .form-row select,
+div.woocommerce form .form-row textarea {
+    padding: 5px;
+    border-radius: 2px;
+    border: 0.5px solid #00000063;
+}
+
+:focus .div.woocommerce form .form-row .select2-selection,
+div.woocommerce form .form-row input[type=date]:focus,
+div.woocommerce form .form-row input[type=email]:focus,
+div.woocommerce form .form-row input[type=number]:focus,
+div.woocommerce form .form-row input[type=password]:focus,
+div.woocommerce form .form-row input[type=search]:focus,
+div.woocommerce form .form-row input[type=tel]:focus,
+div.woocommerce form .form-row input[type=text]:focus,
+div.woocommerce form .form-row input[type=url]:focus,
+div.woocommerce form .form-row select,
+div.woocommerce form .form-row textarea {
+    background: none;
+    border: none;
+}
+
+.has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save{
+    background: #0065EA;
+    color: white;
+    padding: 10px;
+}
+.has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save:hover{
+    background: #fff;
+    color: #0065EA;
+    padding: 10px;
+    border: 1px solid #0065EA;
+}

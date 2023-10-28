@@ -8,22 +8,63 @@
 </head>
 
 <body>
-    <input type="text" id="phoneNumberInput" placeholder="Nhập số điện thoại" />
-    <button id="submitBtn">Submit</button>
-    <div id="displayPhoneNumber"></div>
+    <div id="info_account">
+        <h1>TEST THÔNG TIN</h1>
+        <h2 id="change-password">
+            Thay đổi mật khẩu
+        </h2>
+
+    </div>
+    <div class="clear"></div>
+
+    <div class="row " id="changepass">
+        <div class="col-8 pt-2">
+            <h1>TEST PASS</h1>
+            <h2 id="change-info">
+                Thông tin tài khoản
+            </h2>
+        </div>
+        <div class="col-4">
+            <img src="https://i.imgur.com/WczX1Gp.jpg" alt="" style="height: 170px !important;">
+        </div>
+    </div>
+
 
 </body>
 
 </html>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var phoneNumberInput = document.getElementById('phoneNumberInput');
-        var submitBtn = document.getElementById('submitBtn');
-        var displayPhoneNumber = document.getElementById('displayPhoneNumber');
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the elements and buttons
+        const trangChangeInfo = document.getElementById("info_account");
+        const trangChangePass = document.getElementById("changepass");
+        const changPassButton = document.getElementById("change-password");
+        const changeInfoButton = document.getElementById("change-info");
 
-        submitBtn.addEventListener('click', function () {
-            var phoneNumber = phoneNumberInput.value;
-            displayPhoneNumber.textContent = phoneNumber;
+        // Function to show the registration form and hide the login form
+        function changePass() {
+            trangChangeInfo.style.display = "none";
+            trangChangePass.style.display = "block";
+        }
+
+        // Function to show the login form and hide the registration form
+        function changeInfo() {
+            trangChangeInfo.style.display = "block";
+            trangChangePass.style.display = "none";
+        }
+
+        // Initially, show the login form and hide the registration form
+        changeInfo();
+
+        // Add a click event listener to the "Tạo tài khoản" button
+        changPassButton.addEventListener("click", function () {
+            changePass();
         });
+
+        // Add a click event listener to the "Đăng nhập" button
+        changeInfoButton.addEventListener("click", function () {
+            changeInfo();
+        });
+
     });
 </script>

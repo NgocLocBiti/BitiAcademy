@@ -55,3 +55,10 @@ do_action('woocommerce_before_account_navigation');
 		}
 	});
 </script>
+
+<style>
+	.woocommerce-MyAccount-navigation-link--downloads,
+	.woocommerce-MyAccount-navigation-link--edit-address {
+		display: none;
+	}
+</style>

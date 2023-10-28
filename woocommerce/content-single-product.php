@@ -65,24 +65,27 @@
 									</div>
 									<div class="info2">
 										<p>Học phí: <span> <?php echo $product->get_price_html(); ?></span></p>
-										<button class="btn-101" id="myButton">
-											Đăng ký khóa học
-											<svg>
-												<defs>
-													<filter id="glow">
-														<fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
-														<femerge>
-															<femergenode in="coloredBlur"></femergenode>
-															<femergenode in="coloredBlur"></femergenode>
-															<femergenode in="coloredBlur"></femergenode>
-															<femergenode in="SourceGraphic"></femergenode>
-														</femerge>
-													</filter>
-												</defs>
-												<rect />
-											</svg>
-										</button>
-										<div id="myModal" class="modal">
+										<a href="<?php echo get_home_url(); ?>/thanh-toan/?add-to-cart=<?php the_ID(); ?>">
+											<!-- <button class="btn-101" id="myButton"> -->
+											<button class="btn-101">
+												Đăng ký khóa học
+												<svg>
+													<defs>
+														<filter id="glow">
+															<fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
+															<femerge>
+																<femergenode in="coloredBlur"></femergenode>
+																<femergenode in="coloredBlur"></femergenode>
+																<femergenode in="coloredBlur"></femergenode>
+																<femergenode in="SourceGraphic"></femergenode>
+															</femerge>
+														</filter>
+													</defs>
+													<rect />
+												</svg>
+											</button>
+										</a>
+										<!-- <div id="myModal" class="modal">
 											<div class="modal-content">
 												<span class="close" id="closeButton"><i class="far fa-times-circle"></i></span>
 												<div class="title">
@@ -103,7 +106,7 @@
 												</div>
 												<a class="ma_mon_hoc" href="">*** Danh sách mã môn học tại đây</a>
 											</div>
-										</div>
+										</div> -->
 									</div>
 									<div class="info3">
 										<p>Hình thức học: <?php echo $hinh_thuc_hoc ?></p>
