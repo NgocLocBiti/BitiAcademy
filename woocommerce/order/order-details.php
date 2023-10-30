@@ -25,7 +25,8 @@
 		color: #000000;
 		font-weight: bold;
 	}
-	#goBack  {
+
+	#goBack {
 		border-radius: 8px;
 		border: 1px solid #1388ED;
 		color: #1388ed;
@@ -37,7 +38,34 @@
 		background: #1388ed;
 		color: #FFF;
 	}
+
+	.btn-xac-nhan {
+		display: none;
+		background: #1388ED;
+		border: 1px solid;
+		border-radius: 999px;
+		color: #fff;
+		font-weight: 900;
+		-webkit-mask-image: none;
+		overflow: hidden;
+		padding: 15px;
+		font-size: 13px;
+		position: relative;
+		text-transform: uppercase;
+		transition: 0.2s;
+		margin: 15px 40%;
+	}
+
+	.btn-xac-nhan:hover {
+		box-shadow: 0 6px 0 -4px #fff, 0 9px 0 -4px #aaa;
+		transform: translateY(-5px);
+	}
 </style>
+
+<a href="<?php echo get_home_url(); ?>/xac-nhan-thong-tin-chuyen-khoan/ ">
+	<button class="btn-xac-nhan">Xác nhận đã chuyển khoản</button>
+</a>
+
 <?php
 /**
  * Order details

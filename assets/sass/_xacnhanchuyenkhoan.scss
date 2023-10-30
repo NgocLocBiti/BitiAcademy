@@ -1,0 +1,153 @@
+.xacnhanchuyenkhoan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 48px 0;
+
+    img {
+        width: 100%;
+
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        flex: 1 0 0;
+    }
+
+    h1 {
+        color: var(--Blue-w, #1388ED);
+        font-size: 38px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        /* 78.75% */
+    }
+
+    p {
+        color: #333;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0px 0px 7px 0px;
+        text-align: center;
+
+    }
+
+    form .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*căn lề 2 bên*/
+    }
+
+    form .inputBox input {
+        padding: 7px;
+        margin: 0;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        text-transform: none;
+        width: 100%;
+        border-radius: 5px;
+        border: 0.75px solid #CED4DA;
+        background: #FFF;
+    }
+
+    form .gui-lien-he {
+        margin-top: 10px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        width: 25%;
+        display: flex;
+        padding: 9px 28px 9px 28px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: var(--Lieaner, linear-gradient(90deg, #04C 0%, #006EFF 100%));
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.12);
+        margin-left: 75%;
+    }
+
+    form .gui-lien-he:hover {
+        -webkit-animation: tada 0.8s;
+        animation: tada 0.8s;
+    }
+
+    @-webkit-keyframes tada {
+        0% {
+            transform: scaleX(1);
+        }
+
+        10%,
+        20% {
+            transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+        }
+
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        }
+
+        40%,
+        60%,
+        80% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        }
+
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes tada {
+        0% {
+            transform: scaleX(1);
+        }
+
+        10%,
+        20% {
+            transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+        }
+
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        }
+
+        40%,
+        60%,
+        80% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        }
+
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 522px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25) inset;
+        background: #808080;
+    }
+
+    .wpcf7-response-output {
+        border-color: #46b450;
+        font-weight: bold;
+        border-radius: 10px;
+        margin: 0 !important;
+    }
+
+}

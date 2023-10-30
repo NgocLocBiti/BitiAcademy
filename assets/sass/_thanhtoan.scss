@@ -10,7 +10,7 @@ body.woocommerce-checkout .fc-content * .checkbox {
 .fc-checkout-steps {
     padding: 15px;
     border-radius: 10px;
-    box-shadow: -10px 10px 0px 0px #b3b3b359;
+    box-shadow: -10px 10px 15px 0px #b3b3b359;
     background: #FFF;
 }
 
@@ -49,14 +49,72 @@ div.woocommerce form .form-row textarea {
     border: none;
 }
 
-.has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save{
+.has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save {
     background: #0065EA;
     color: white;
     padding: 10px;
 }
-.has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save:hover{
+
+.has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save:hover {
     background: #fff;
     color: #0065EA;
     padding: 10px;
     border: 1px solid #0065EA;
+}
+
+.has-checkout-layout--multi-step .fc-step__actions .fc-step__next-step {
+    background: #0065EA;
+    color: white;
+    padding: 10px;
+}
+
+.has-checkout-layout--multi-step .fc-step__actions .fc-step__next-step:hover {
+    background: #fff;
+    color: #0065EA;
+    padding: 10px;
+    border: 1px solid #0065EA;
+}
+
+.woocommerce-page .woocommerce-message .button {
+    background: #fff;
+    color: #0065EA;
+    padding: 10px;
+    border: 1px solid #0065EA;
+    transform: rotateX(32deg);
+    transform-style: preserve-3d;
+    transition: transform 0.2s;
+}
+
+.woocommerce-page .woocommerce-message .button:hover {
+    transform: rotateX(38deg) translateY(-5px);
+    background: #fff;
+    color: #0065EA;
+}
+
+
+div.woocommerce .fc-wrapper .fc-checkout-order-review .fc-checkout-order-review__inner {
+    box-shadow: 10px 10px 15px 0px #b3b3b359 !important;
+}
+
+.fc-checkout-order-review__head .fc-checkout-order-review__header-link {
+    color: #0065EA !important;
+}
+
+body.woocommerce-checkout div.woocommerce .fc-wrapper .fc-checkout-order-review-title {
+    color: red !important;
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt {
+    background: #0065EA !important;
+}
+
+// đăng nhập trước khi thanh toán
+body.woocommerce-checkout .fc-content.fc-container {
+    padding: 190px 50px 80px !important;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.fc-container .fc-checkout__title{
+    color: #0065EA;
 }

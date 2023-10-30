@@ -298,6 +298,12 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		width: 200px;
 	}
 
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg ul li {
+			width: 166.5px;
+		}
+	}
+
 	.thongtin-account .bg ul li .nav-link {
 		display: flex;
 		justify-content: center;
@@ -306,6 +312,12 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		color: #000000;
 		font-weight: bold;
 		font-size: 18px;
+	}
+
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg ul li .nav-link {
+			font-size: 14px;
+		}
 	}
 
 	.thongtin-account .bg ul li .active {
@@ -319,7 +331,13 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		color: #1388ED;
 		font-weight: bold;
 		font-size: 18px;
-		border-radius: none !important;
+		border-radius: 0px !important;
+	}
+
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg ul li .nav-link {
+			font-size: 14px;
+		}
 	}
 
 	.thongtin-account .bg .tab-content {
@@ -348,12 +366,23 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		width: 170px;
 	}
 
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg .tab-content .info p label {
+			font-size: 14px;
+		}
+	}
+
 	.thongtin-account .bg .tab-content .info p input {
 		border-radius: 5px;
 		color: #404040;
 		font-size: 16px;
 		padding: 5px;
 		border: 2px solid #c1c1c1;
+	}
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg .tab-content .info p input {
+			font-size: 14px;
+		}
 	}
 
 	.thongtin-account .bg .tab-content .info span em {

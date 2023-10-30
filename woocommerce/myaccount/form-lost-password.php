@@ -54,6 +54,26 @@
 		transform: translateY(-4px);
 		will-change: box-shadow, transform;
 	}
+
+	/* MOBILE */
+	@media screen and (max-width: 420px) {
+		.lost_reset_password{
+			padding: 15px 10px;
+		}
+		.lost_reset_password h1{
+			font-size: 17px !important;
+		}
+		.lost_reset_password p{
+			font-size: 10px !important;
+			margin: 0px !important;
+		}
+		.lost_reset_password button{
+			margin-top: 10px !important;
+		}
+		.lost_reset_password p input{
+			font-size: 11px !important;
+		}
+	}
 </style>
 
 <?php

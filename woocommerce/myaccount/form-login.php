@@ -94,11 +94,12 @@ do_action('woocommerce_before_customer_login_form'); ?>
 								<?php do_action('woocommerce_login_form_start'); ?>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 									<label for="username"><?php esc_html_e('Username or email address', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-									<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
+									<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" placeholder="VD: ngocloc2001" name="username" id="username" autocomplete="username" value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>" /><?php // @codingStandardsIgnoreLine 
+																																																																												?>
 								</p>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 									<label for="password"><?php esc_html_e('Password', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
-									<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+									<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" placeholder="**********" name="password" id="password" autocomplete="current-password" />
 								</p>
 								<?php do_action('woocommerce_login_form'); ?>
 								<p class="form-row">
@@ -120,7 +121,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 					</div>
 					<!-- HÌNH ẢNH -->
 					<div class="col-lg-8">
-						<img src="https://s3-alpha-sig.figma.com/img/8ef2/caab/b31504048bb0b9ba2c787fd4e183368d?Expires=1698624000&Signature=DPa8p85E~pOcvC-s0CyN~g3NlRAsirCPrK6A~NuE9yAm2OesjZieAfUVSw3kY0j0qsmtAbUQnN93DrxRdzKS4AjER1cH4QSiMdza-wOCFI0KuIHEEaeDKAEf06ZU~eowwPZGzQRcGxkCchu0iHM-3Pl9~3cRqEPsacW34y5hv9goyLrAJLynRB8jpLJS0INAkzCFTqNB4bZXTrLOgzQ8-F4nod6TssuJT8TsSk8ZOUn7lmEXLuij4p1vP7-unawpjUMuJsY1gj3ZHkvKiMe3kNyvvir4vVZTvm1lrfD-gnyBePQRj5n4GghxodWWu2r2ETtf-y1RvfNhY1Yq7g9oKA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" width="100%" height="100% !important">
+						<img src="https://s3-alpha-sig.figma.com/img/8ef2/caab/b31504048bb0b9ba2c787fd4e183368d?Expires=1699833600&Signature=JAXFINhsGHCUfh3lA2yCV64KNFVdB6n1Dy8hSoHYeLCTtHmZ-TctwlezadnERDcDFPWjlN~WC5DlIv4VRCkOg18U2eJoAImmQwezB7CzIGGBdszVlZc8xXkoCbhQ2H1YvjgejhpDvt9XLGSiQtb7bSxdCDTzv0WDXfz-B~PATcy~v3rQQbr5LMXLNXW-mMCrxlAxxWdU91fakhGfD56j0m89EZa8GlNROMpRQBHsNaFHb9MQGIlPKQ4HYvxxt6yhZvhM4zAda9v3kaAqmkoPHtKe8vosj5Glr2Mu1J1bT1o26iecPECknCjyHLhPEtXbkHWtGYoJt1hdyeimw0oNlg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" width="100%" height="100% !important">
 					</div>
 				</div>
 			</div>
@@ -193,14 +194,14 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	#username {
 		width: 100%;
 		padding: 5px;
-		border-bottom: 2px solid #012C4D;
+		border-bottom: 2px solid #012C4D !important;
 		font-size: 14px;
 		color: #333;
+		border: 1px solid white;
 	}
 
 	#username:focus {
 		outline: none;
-		border-color: #012C4D;
 		/* Change the border color on focus */
 		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 		/* Add a subtle box shadow on focus */
@@ -216,7 +217,6 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 	#email:focus {
 		outline: none;
-		border-color: #012C4D;
 		/* Change the border color on focus */
 		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 		/* Add a subtle box shadow on focus */
@@ -225,14 +225,14 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	#password {
 		width: 100%;
 		padding: 5px;
-		border-bottom: 2px solid #012C4D;
+		border-bottom: 2px solid #012C4D !important;
 		font-size: 14px;
 		color: #333;
+		border: 1px solid white;
 	}
 
 	#password:focus {
 		outline: none;
-		border-color: #012C4D;
 		/* Change the border color on focus */
 		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 		/* Add a subtle box shadow on focus */
@@ -248,7 +248,6 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 	#repassword:focus {
 		outline: none;
-		border-color: #012C4D;
 		/* Change the border color on focus */
 		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 		/* Add a subtle box shadow on focus */
@@ -603,7 +602,10 @@ do_action('woocommerce_before_customer_login_form'); ?>
 		cursor: pointer;
 		display: none;
 
-		@media screen and (max-width: 420px) {
+	}
+
+	@media screen and (max-width: 420px) {
+		.pass span {
 			top: 55%;
 			font-size: 14px;
 		}
@@ -620,6 +622,25 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	.woocommerce form .form-row label {
 		margin: 0 !important;
 		line-height: 1.5 !important;
+	}
+
+	/* MOBILE */
+	@media screen and (max-width: 420px) {
+		.dang_nhap_main {
+			padding: 20px 20px 20px 20px;
+		}
+
+		.section-inner {
+			padding: 20px 20px 20px 20px;
+		}
+
+		.login_wrap img {
+			display: none;
+		}
+
+		.login_main {
+			padding: 0px;
+		}
 	}
 </style>
 

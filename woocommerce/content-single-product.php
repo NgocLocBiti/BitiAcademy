@@ -85,28 +85,6 @@
 												</svg>
 											</button>
 										</a>
-										<!-- <div id="myModal" class="modal">
-											<div class="modal-content">
-												<span class="close" id="closeButton"><i class="far fa-times-circle"></i></span>
-												<div class="title">
-													<h3>Đăng ký khóa học</h3>
-													<p>Vui lòng thực hiện thanh toán theo thông tin sau:</p>
-												</div>
-												<div class="content">
-													<p class="so_tai_khoan">Số tài khoản ngân hàng: <span>123456789</span></p>
-													<p class="chu_tai_khoan">Chủ tài khoản: <span> TRAN NHAT TOAN </span></p>
-													<p class="ten_ngan_hang">Ngân hàng thương mại cổ phần Sài Gòn Thương Tín</p>
-													<p class="nd_chuyen_khoan">Nội dung chuyển khoản:</p>
-													<p class="cu_phap">ID Tài khoản <span>
-															<'dấu cách'>
-														</span> Mã môn học <span>
-															<'dấu cách'>
-														</span> Số điện thoại</p>
-													<p class="vi_du">( VD: 123456789 ID1233 012345678 )</p>
-												</div>
-												<a class="ma_mon_hoc" href="">*** Danh sách mã môn học tại đây</a>
-											</div>
-										</div> -->
 									</div>
 									<div class="info3">
 										<p>Hình thức học: <?php echo $hinh_thuc_hoc ?></p>

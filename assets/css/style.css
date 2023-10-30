@@ -3407,7 +3407,7 @@ body.woocommerce-checkout .fc-content * .checkbox {
 .fc-checkout-steps {
   padding: 15px;
   border-radius: 10px;
-  box-shadow: -10px 10px 0px 0px #b3b3b359;
+  box-shadow: -10px 10px 15px 0px #b3b3b359;
   background: #FFF; }
 
 .has-checkout-layout--multi-step .fc-checkout-step .fc-step__substep:first-of-type {
@@ -3452,6 +3452,159 @@ div.woocommerce form .form-row textarea {
   color: #0065EA;
   padding: 10px;
   border: 1px solid #0065EA; }
+
+.has-checkout-layout--multi-step .fc-step__actions .fc-step__next-step {
+  background: #0065EA;
+  color: white;
+  padding: 10px; }
+
+.has-checkout-layout--multi-step .fc-step__actions .fc-step__next-step:hover {
+  background: #fff;
+  color: #0065EA;
+  padding: 10px;
+  border: 1px solid #0065EA; }
+
+.woocommerce-page .woocommerce-message .button {
+  background: #fff;
+  color: #0065EA;
+  padding: 10px;
+  border: 1px solid #0065EA;
+  transform: rotateX(32deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s; }
+
+.woocommerce-page .woocommerce-message .button:hover {
+  transform: rotateX(38deg) translateY(-5px);
+  background: #fff;
+  color: #0065EA; }
+
+div.woocommerce .fc-wrapper .fc-checkout-order-review .fc-checkout-order-review__inner {
+  box-shadow: 10px 10px 15px 0px #b3b3b359 !important; }
+
+.fc-checkout-order-review__head .fc-checkout-order-review__header-link {
+  color: #0065EA !important; }
+
+body.woocommerce-checkout div.woocommerce .fc-wrapper .fc-checkout-order-review-title {
+  color: red !important; }
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt {
+  background: #0065EA !important; }
+
+body.woocommerce-checkout .fc-content.fc-container {
+  padding: 190px 50px 80px !important;
+  border-radius: 10px;
+  background: #FFF; }
+
+.fc-container .fc-checkout__title {
+  color: #0065EA; }
+
+.xacnhanchuyenkhoan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  padding: 48px 0; }
+  .xacnhanchuyenkhoan img {
+    width: 100%; }
+  .xacnhanchuyenkhoan-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    flex: 1 0 0; }
+  .xacnhanchuyenkhoan h1 {
+    color: var(--Blue-w, #1388ED);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    /* 78.75% */ }
+  .xacnhanchuyenkhoan p {
+    color: #333;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0px 0px 7px 0px;
+    text-align: center; }
+  .xacnhanchuyenkhoan form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*căn lề 2 bên*/ }
+  .xacnhanchuyenkhoan form .inputBox input {
+    padding: 7px;
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    text-transform: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.75px solid #CED4DA;
+    background: #FFF; }
+  .xacnhanchuyenkhoan form .gui-lien-he {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: 25%;
+    display: flex;
+    padding: 9px 28px 9px 28px;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: var(--Lieaner, linear-gradient(90deg, #04C 0%, #006EFF 100%));
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.12);
+    margin-left: 75%; }
+  .xacnhanchuyenkhoan form .gui-lien-he:hover {
+    -webkit-animation: tada 0.8s;
+    animation: tada 0.8s; }
+@-webkit-keyframes tada {
+  0% {
+    transform: scaleX(1); }
+  10%,
+        20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg); }
+  30%,
+        50%,
+        70%,
+        90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
+  40%,
+        60%,
+        80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+  to {
+    transform: scaleX(1); } }
+@keyframes tada {
+  0% {
+    transform: scaleX(1); }
+  10%,
+        20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg); }
+  30%,
+        50%,
+        70%,
+        90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
+  40%,
+        60%,
+        80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+  to {
+    transform: scaleX(1); } }
+  .xacnhanchuyenkhoan iframe {
+    width: 100%;
+    height: 522px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25) inset;
+    background: #808080; }
+  .xacnhanchuyenkhoan .wpcf7-response-output {
+    border-color: #46b450;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0 !important; }
 
 .footer-top {
   height: 360px;
