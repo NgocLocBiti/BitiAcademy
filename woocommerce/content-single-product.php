@@ -264,8 +264,9 @@
 				document.getElementById('myModal').style.display = 'none';
 			}
 		};
+	</script>
 
-
+	<script>
 		var elements = document.querySelectorAll('.active');
 		elements.forEach(function(element) {
 			element.classList.remove('active');

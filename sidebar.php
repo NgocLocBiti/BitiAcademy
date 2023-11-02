@@ -32,6 +32,6 @@
         ?>
     <?php endif; ?>
     <div class="image-box">
-        <img src="https://s3-alpha-sig.figma.com/img/2b40/a64e/aa84813f0646ab1f7360531cae74e914?Expires=1698624000&Signature=f9VAl9n5-NRK6SNa37Ephm7UxJnwyEv48Ql2nP86IbNJuxUKxFrqq0POB2Hi8G0HsuoaM6UMUut9PQfZYan--9aOmIVw2lNhly--yv~LNlabeLeFLAozn~rcJ1fcfzifoi-Jpt8HvZdQNhaHZrND23oNtqpp4-H9c9pg758CQp3jtKclFvQNJHo3wf2dXEnC-VWGJacETy8F6iKASMCfsUyv0eyG4xp87HAFNtvW3SHg2Gv6Wo6Av46gcU-UBst6vKbVIwrrFei5JUmZGIReMW0esNm1ja6it7BnOntl~UXUh-6hvoa4O-CkiAnSxrLpxE7wOmBWAV~sC8bBLMJ6rA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+        <img src="https://s3-alpha-sig.figma.com/img/2b40/a64e/aa84813f0646ab1f7360531cae74e914?Expires=1699833600&Signature=dgNUDqeEvYCsc0~UuU2X88nzbcp223q8Oa~Q3qnS9IXbrK63F~DtMPYTsweLkwTvT5d3lMzZuv7Dmtt~dwZVZ9-QgBqjOP5QCIvtsMnGgodaNzZyQGNPjKe6B44GSo3WfxXe-pwMn5ANzO237z-Ru7PrJ1LREiruWO7ylNESDtzVlPOmnYWgXsQqTITVJT008xfMUjUxya3Vo1k3qbsfEA1VaVOrsargWaeuMBk4zvURU53E6zfKg06yolVJ60UBg7FNVRYl~rpkWnGQLwg2DIpW8ZFHExFLNVV4Db6JieUrBnNh4kUdHjpsk5ASmK3xv79aoHccL3aulXgOyZP9ig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
     </div>
 </div>

@@ -1,3 +1,10 @@
+<script>
+	var elements = document.querySelectorAll('.active');
+	elements.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	document.getElementById("login").classList.add('active');
+</script>
 <style>
 	.woocommerce {
 		padding: 40px;
@@ -68,6 +75,22 @@
 		width: 100%;
 		height: 100%;
 	}
+
+	:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
+		width: 150px;
+	}
+
+	@media screen and (max-width: 990px) {
+		.woocommerce {
+			width: 80%;
+			padding: 10px;
+			margin: 0px 10%;
+		}
+
+		:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
+			width: 120px;
+		}
+	}
 </style>
 
 <?php
@@ -93,10 +116,10 @@ defined('ABSPATH') || exit;
 do_action('woocommerce_before_reset_password_form');
 ?>
 <div class="row">
-	<div class="col-5">
+	<div class="col-lg-5 col-md-5 col-12">
 		<img src="https://i.imgur.com/VB2U3Js.png" alt="">
 	</div>
-	<div class="col-7">
+	<div class="col-lg-7 col-md-7 col-12">
 		<form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
 			<h1>ĐẶT LẠI MẬT KHẨU</h1>

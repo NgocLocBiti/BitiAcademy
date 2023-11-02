@@ -1,3 +1,10 @@
+<script>
+    var elements = document.querySelectorAll('.active');
+    elements.forEach(function(element) {
+        element.classList.remove('active');
+    });
+    document.getElementById("login").classList.add('active');
+</script>
 <style>
     .woocommerce {
         background: #fff;
@@ -31,6 +38,29 @@
 
     p {
         padding: 1px 20px;
+    }
+
+    @media screen and (max-width: 420px) {
+        .woocommerce-message::before {
+            display: none;
+        }
+
+        .woocommerce-message {
+            padding: 1em 1em 1em 1em;
+        }
+
+        .woocommerce {
+            width: 99%;
+            margin: -50px 0% -15px 0%;
+        }
+    }
+
+    /* Máy tính bản */
+    @media screen and (max-width: 990px) {
+
+        .woocommerce {
+            margin: 0 20% 15%;
+        }
     }
 </style>
 <?php

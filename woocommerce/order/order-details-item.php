@@ -4,6 +4,13 @@
 		display: inline-block;
 	}
 </style>
+<script>
+	var elements = document.querySelectorAll('.active');
+	elements.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	document.getElementById("login").classList.add('active');
+</script>
 <?php
 
 /**

@@ -85,32 +85,32 @@
                 <div id="mobile-overlay-menu" class="mobile-menu-overlay">
                     <div class="web-container">
                         <div class="logo_shop">
-                            <img src="http://localhost/BitiAcademy/wp-content/uploads/2023/10/BITI-Academy-V4-2-2.png" alt="">
+                            <img src="https://i.imgur.com/6vchPH7.png" alt="">
                         </div>
                         <ul class="nav-menu menu">
                             <li>
-                                <a href="<?php echo get_home_url(); ?>/">Trang Chủ</a>
+                                <a href="<?php echo get_home_url(); ?>/">Trang chủ</a>
                             </li>
                             <li>
-                                <a href="<?php echo get_home_url(); ?>/gioi-thieu">Giới Thiệu</a>
+                                <a href="<?php echo get_home_url(); ?>/gioi-thieu">Giới thiệu</a>
                             </li>
                             <li>
-                                <a href="<?php echo get_home_url(); ?>/khoa-dao-tao">Khóa Đào tạo</a>
+                                <a href="<?php echo get_home_url(); ?>/khoa-dao-tao">Khóa đào tạo</a>
                             </li>
                             <li>
                                 <div class="item">
-                                    <a href="<?php echo get_home_url(); ?>/tin-tuc">Tin tức & Sự kiện</a>
+                                    <a href="<?php echo get_home_url(); ?>/tin-tuc">Tin tức & sự kiện</a>
                                     <i class="fas fa-angle-down" id="menu_td"></i>
                                 </div>
                                 <ul class="sub-menu menu" id="menu_td_con">
-                                    <li><a href="<?php echo get_home_url(); ?>/">Sự kiện - Hội thảo</a></li>
-                                    <li><a href="<?php echo get_home_url(); ?>/">Về BITI Academy</a></li>
-                                    <li><a href="<?php echo get_home_url(); ?>/">Lịch tuyển sinh</a></li>
-                                    <li><a href="<?php echo get_home_url(); ?>/">Chia sẻ kiến thức</a></li>
+                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/su-kien-hoi-thao/">Sự kiện - hội thảo</a></li>
+                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/ve-biti-academy/">Về BITI Academy</a></li>
+                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/lich-tuyen-sinh/">Lịch tuyển sinh</a></li>
+                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/chia-se-kien-thuc/">Chia sẻ kiến thức</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="<?php echo get_home_url(); ?>/lien-he">Liên Hệ</a>
+                                <a href="<?php echo get_home_url(); ?>/lien-he">Liên hệ</a>
                             </li>
                         </ul>
 
@@ -138,7 +138,7 @@
                         <div id="FullScreenOverlay" class="overlay" style="display: none;">
                             <div id="background" style="display: none;"></div>
                             <div class="overlay-content">
-                                <form action="http://localhost/BitiAcademy/">
+                                <form action="<?php echo get_home_url(); ?>">
                                     <input name="s" autocomplete="off" type="text" placeholder="Nhập từ khóa" fdprocessedid="e4f9cj">
                                     <button class="timkiem" type="submit" fdprocessedid="9zrt5g">Tìm kiếm</button>
                                 </form>

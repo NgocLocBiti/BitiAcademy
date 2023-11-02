@@ -6,9 +6,11 @@
     align-self: stretch;
     background: White;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
-    position: absolute;
     z-index: 10;
-
+    position: sticky;
+    transition: all 0.7s;
+    transition-timing-function: linear;
+    top: 0;
 
     &-top {
         display: flex;
@@ -118,16 +120,30 @@
             padding: 0 25px;
             justify-content: space-between;
             align-items: center;
+            height: 70px;
+
         }
 
         @media screen and (max-width: 420px) {
             padding: 0 5px;
+            height: 50px;
         }
 
         &-logo {
             display: flex;
             align-items: flex-start;
             align-self: stretch;
+
+            img {
+                height: auto;
+
+                @media screen and (max-width: 990px) {
+                    height: 70px;
+                }
+                @media screen and (max-width: 420px) {
+                    height: 50px;
+                }
+            }
         }
 
 
@@ -170,6 +186,10 @@
                 border-radius: 50px;
                 background: #012C4D;
                 transition: transform 0.3s;
+
+                @media screen and (max-width: 990px) {
+                    padding: 7px;
+                }
 
                 &:hover {
                     transform: scale(1.1);
@@ -288,6 +308,10 @@
 
             i {
                 font-size: 40px;
+
+                @media screen and (max-width: 990px) {
+                    font-size: 25px;
+                }
             }
 
         }
@@ -301,7 +325,7 @@
                     background: url('https://img5.thuthuatphanmem.vn/uploads/2021/09/22/background-den-xanh-duong-dep_094943496.jpg');
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
-                    height: 190px;
+                    height: 140px;
 
                     img {
                         width: 50%;
@@ -335,7 +359,7 @@
                     li {
                         position: relative;
                         color: black;
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 600;
                         border-top: 2px solid rgb(169, 184, 195);
                         margin-bottom: 0 !important;
@@ -348,7 +372,7 @@
                                 text-decoration: none;
                                 color: #6c757d;
                                 display: block;
-                                padding: 10px 20px;
+                                padding: 7px 20px;
                                 transition: background-color 0.3s;
 
                                 &:hover {
@@ -358,8 +382,9 @@
                             }
 
                             i {
-                                font-size: 25px;
-                                margin: 11px;
+                                font-size: 16px;
+                                margin: 10.5px 10px;
+                                color:  #6c757d;
                             }
                         }
 
@@ -367,7 +392,7 @@
                             text-decoration: none;
                             color: #6c757d;
                             display: block;
-                            padding: 10px 20px;
+                            padding: 7px 20px;
                             transition: background-color 0.3s;
 
                             &:hover {
@@ -384,7 +409,7 @@
                                     text-decoration: none;
                                     color: #6c757d;
                                     display: block;
-                                    padding: 10px 20px;
+                                    padding: 7px 20px;
                                     transition: background-color 0.3s;
                                 }
                             }
@@ -415,7 +440,7 @@
                         background-image: none;
                         color: #fff;
                         cursor: pointer;
-                        font-size: 100%;
+                        font-size: 14px;
                         font-weight: 900;
                         line-height: 1.5;
                         margin: 0;
@@ -445,7 +470,7 @@
                         border-radius: 99rem;
                         border-width: 2px;
                         overflow: hidden;
-                        padding: 10px 60px;
+                        padding: 10px 25px;
                         width: 80%;
                         position: relative;
                         margin: 0 10%;
@@ -516,7 +541,7 @@
                 z-index: 99999;
 
                 i {
-                    font-size: 40px;
+                    font-size: 30px;
                 }
             }
         }
@@ -564,14 +589,19 @@
     .menu-mobile-bottom {
         display: none;
         position: fixed;
-        bottom: -7px;
+        bottom: -25px;
         width: 100%;
         margin: 0 auto;
         left: 0;
         right: 0;
+        z-index: 1000;
 
         @media screen and (max-width: 990px) {
             display: block;
+        }
+
+        @media screen and (max-width: 420px) {
+            bottom: -26px;
         }
     }
 
@@ -599,7 +629,7 @@
         &__item {
             display: flex;
             position: relative;
-            padding: 10px;
+            padding: 3px;
 
             @media screen and (max-width: 420px) {
                 padding: 0px;
@@ -611,7 +641,7 @@
                     box-shadow: 0px 0px 16px 0px #4444;
 
                     i {
-                        font-size: 40px;
+                        font-size: 30px;
 
                         @media screen and (max-width: 420px) {
                             font-size: 25px;
@@ -636,11 +666,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 40px;
+                font-size: 35px;
                 background-color: #fff;
                 border-radius: 50%;
-                height: 70px;
-                width: 70px;
+                height: 60px;
+                width: 60px;
                 transition: margin-top 250ms ease-in-out, box-shadow 250ms ease-in-out;
 
                 @media screen and (max-width: 420px) {
@@ -664,6 +694,13 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         z-index: 999999;
         width: 100%;
+    }
+}
+
+.header_active {
+    top: -50px;
+    @media screen and (max-width:990px) {
+        top: 0;
     }
 }
 

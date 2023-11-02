@@ -1,3 +1,10 @@
+<script>
+	var elements = document.querySelectorAll('.active');
+	elements.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	document.getElementById("login").classList.add('active');
+</script>
 <?php
 
 /**
@@ -126,10 +133,12 @@ do_action('woocommerce_before_account_orders', $has_orders); ?>
 		background: #1388ed;
 		color: #FFF;
 	}
-	.woocommerce table.my_account_orders th{
+
+	.woocommerce table.my_account_orders th {
 		font-size: 16px;
 	}
-	.woocommerce table.my_account_orders td{
+
+	.woocommerce table.my_account_orders td {
 		font-size: 14px;
 	}
 </style>

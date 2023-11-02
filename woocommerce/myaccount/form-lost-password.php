@@ -1,3 +1,10 @@
+<script>
+	var elements = document.querySelectorAll('.active');
+	elements.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	document.getElementById("login").classList.add('active');
+</script>
 <style>
 	.lost_reset_password {
 		padding: 40px;
@@ -40,7 +47,7 @@
 		margin-top: 10px !important;
 	}
 
-	.lost_reset_password  button {
+	.lost_reset_password button {
 		margin-top: 20px !important;
 		border-radius: 8px !important;
 		border: 2px solid #1388ED !important;
@@ -49,28 +56,40 @@
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
 
-	.lost_reset_password  button:hover {
+	.lost_reset_password button:hover {
 		box-shadow: -5px 5px 5px 2px #aaa4a44d;
 		transform: translateY(-4px);
 		will-change: box-shadow, transform;
 	}
 
+	div.woocommerce form .form-row input[type=text]:focus {
+		padding: 5px;
+		border-radius: 2px;
+		border: 0.5px solid #00000063;
+	}
+
 	/* MOBILE */
 	@media screen and (max-width: 420px) {
-		.lost_reset_password{
+		.lost_reset_password {
 			padding: 15px 10px;
+			width: 80%;
+			margin: -50px 10% -15px;
 		}
-		.lost_reset_password h1{
+
+		.lost_reset_password h1 {
 			font-size: 17px !important;
 		}
-		.lost_reset_password p{
+
+		.lost_reset_password p {
 			font-size: 10px !important;
 			margin: 0px !important;
 		}
-		.lost_reset_password button{
+
+		.lost_reset_password button {
 			margin-top: 10px !important;
 		}
-		.lost_reset_password p input{
+
+		.lost_reset_password p input {
 			font-size: 11px !important;
 		}
 	}

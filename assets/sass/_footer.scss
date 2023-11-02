@@ -105,11 +105,14 @@
 
     &-bottom {
         display: flex;
-        padding: 10px 80px;
+        padding: 10px 40px;
         justify-content: center;
         align-items: center;
         align-self: stretch;
         background: #011C34;
+        @media screen and (max-width: 990px) {
+            padding-bottom: 60px;
+        }
 
         p {
             color: #FFF;

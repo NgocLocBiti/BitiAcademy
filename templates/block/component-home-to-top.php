@@ -8,7 +8,7 @@
     </div>
     <div class="heart">
         <span>
-            <a class="zalo" target="_blank" href="">
+            <a class="zalo" target="_blank" href="" style="font-size: 14px;">
                 Zalo
             </a>
         </span>
@@ -53,7 +53,7 @@
         position: fixed;
         bottom: 60px;
         right: 30px;
-        z-index: 999;
+        z-index: 9;
     }
 
     @keyframes beat {
@@ -104,7 +104,7 @@
         background: transparent;
         border: 2px solid #3193F6;
         color: #3193F6;
-
+        display: none;
     }
 
     @media(max-width: 576px) {
@@ -179,15 +179,15 @@
 
     @media screen and (max-width: 990px) {
         .top-down {
-            bottom: 130px;
+            bottom: 80px;
             right: 25px;
         }
     }
 
     @media screen and (max-width: 420px) {
         .top-down {
-            bottom: 90px;
-            right: 20px;
+            bottom: 70px;
+            right: 15px;
         }
     }
 </style>

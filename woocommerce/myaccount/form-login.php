@@ -34,7 +34,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 			<div class="login_wrap">
 				<div class="row">
 					<!-- ĐĂNG KÝ -->
-					<div class="col-lg-4" id="id_dangki">
+					<div class="col-lg-4 col-md-12 col-12" id="id_dangki">
 						<main id="site-content">
 							<div class="section-inner">
 								<?php
@@ -87,7 +87,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 						</main>
 					</div>
 					<!-- ĐĂNG NHẬP -->
-					<div class="col-lg-4" id="id_dangnhap">
+					<div class="col-lg-4 col-md-12 col-12" id="id_dangnhap">
 						<div class="dang_nhap_main">
 							<h2><?php esc_html_e('ĐĂNG NHẬP', 'woocommerce'); ?></h2>
 							<form class="woocommerce-form woocommerce-form-login login" method="post">
@@ -120,8 +120,8 @@ do_action('woocommerce_before_customer_login_form'); ?>
 						</div>
 					</div>
 					<!-- HÌNH ẢNH -->
-					<div class="col-lg-8">
-						<img src="https://s3-alpha-sig.figma.com/img/8ef2/caab/b31504048bb0b9ba2c787fd4e183368d?Expires=1699833600&Signature=JAXFINhsGHCUfh3lA2yCV64KNFVdB6n1Dy8hSoHYeLCTtHmZ-TctwlezadnERDcDFPWjlN~WC5DlIv4VRCkOg18U2eJoAImmQwezB7CzIGGBdszVlZc8xXkoCbhQ2H1YvjgejhpDvt9XLGSiQtb7bSxdCDTzv0WDXfz-B~PATcy~v3rQQbr5LMXLNXW-mMCrxlAxxWdU91fakhGfD56j0m89EZa8GlNROMpRQBHsNaFHb9MQGIlPKQ4HYvxxt6yhZvhM4zAda9v3kaAqmkoPHtKe8vosj5Glr2Mu1J1bT1o26iecPECknCjyHLhPEtXbkHWtGYoJt1hdyeimw0oNlg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" width="100%" height="100% !important">
+					<div class="col-lg-8 col-md-12 col-12">
+						<img src="https://img.freepik.com/free-vector/desktop-computer-concept-illustration_114360-16232.jpg?w=996&t=st=1698720172~exp=1698720772~hmac=da34beaf1222e50f568f8138fc9c42cabaf4bd17c1a3db78c2d87b3a3310b243" alt="">
 					</div>
 				</div>
 			</div>
@@ -297,7 +297,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	}
 
 	.login_wrap img {
-		height: 100% !important;
+		height: 95% !important;
 		width: 100%;
 		border-top-right-radius: 16px;
 		border-bottom-right-radius: 16px;
@@ -371,7 +371,6 @@ do_action('woocommerce_before_customer_login_form'); ?>
 		font-size: 14px;
 		color: #fff;
 		text-transform: uppercase;
-
 		-webkit-transform: perspective(1px) translateZ(0);
 		transform: perspective(1px) translateZ(0);
 		box-shadow: 0 0 1px transparent;
@@ -634,12 +633,45 @@ do_action('woocommerce_before_customer_login_form'); ?>
 			padding: 20px 20px 20px 20px;
 		}
 
+		.login_wrap {
+			margin: -25px 25px !important;
+		}
+
 		.login_wrap img {
 			display: none;
 		}
 
 		.login_main {
 			padding: 0px;
+		}
+
+		.woocommerce {
+			margin-top: -15%;
+		}
+
+		.dang_nhap_main button.woocommerce-button {
+			margin-left: 23% !important;
+		}
+	}
+
+	/*Máy tính bảng */
+	@media screen and (max-width: 990px) {
+		.login_main {
+			padding: 0px 0px 30px 0px;
+		}
+
+		.login_wrap {
+			max-width: 550px;
+			margin: -35px 100px;
+		}
+
+		.section-inner {
+			padding: 20px 20px 20px 20px;
+			box-shadow:none
+		}
+
+		.dang_nhap_main button.woocommerce-button {
+			margin-left: 33%;
 		}
 	}
 </style>

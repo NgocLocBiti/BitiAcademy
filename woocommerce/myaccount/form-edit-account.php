@@ -91,7 +91,7 @@ do_action('woocommerce_before_edit_account_form'); ?>
 					</h2>
 
 					<div class="row" id="changepass">
-						<div class="col-8 pt-2">
+						<div class="col-lg-8 col-12 col-md-9 pt-2">
 							<fieldset>
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 									<label for="password_current"><?php esc_html_e('Mật khẩu hiện tại', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
@@ -107,8 +107,8 @@ do_action('woocommerce_before_edit_account_form'); ?>
 								</p>
 							</fieldset>
 						</div>
-						<div class="col-4">
-							<img src="https://i.imgur.com/WczX1Gp.jpg" alt="" style="height: 170px !important;">
+						<div class="col-lg-4 col-12 col-md-3">
+							<img src="https://i.imgur.com/WczX1Gp.jpg" class="img-changepass" alt="">
 						</div>
 					</div>
 
@@ -379,6 +379,7 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		padding: 5px;
 		border: 2px solid #c1c1c1;
 	}
+
 	@media screen and (max-width: 420px) {
 		.thongtin-account .bg .tab-content .info p input {
 			font-size: 14px;
@@ -388,6 +389,22 @@ do_action('woocommerce_before_edit_account_form'); ?>
 	.thongtin-account .bg .tab-content .info span em {
 		margin-left: 140px;
 		color: #68b0fb;
+	}
+
+	@media screen and (max-width: 990px) {
+		.thongtin-account .bg .tab-content .info span em {
+			margin-left: 0px;
+		}
+	}
+	@media screen and (max-width: 770px) {
+		.thongtin-account .bg .tab-content .info span em {
+			margin-left: 140px;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg .tab-content .info span em {
+			margin-left: 0px;
+		}
 	}
 
 	.thongtin-account .bg .tab-content .info p button {
@@ -436,6 +453,23 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		font-style: normal;
 		font-weight: 600;
 		width: 70%;
+	}
+
+	@media screen and (max-width: 990px) {
+		.thongtin-account .bg .tab-content #changepass p label {
+			width: 120%;
+		}
+	}
+	@media screen and (max-width: 780px) {
+		.thongtin-account .bg .tab-content #changepass p label {
+			width: 70%;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.thongtin-account .bg .tab-content #changepass p label {
+			font-size: 14px;
+			width: 100%;
+		}
 	}
 
 	.woocommerce-page form .password-input {
@@ -503,4 +537,21 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		font-weight: bold;
 		font-size: 18px;
 	}
+
+	.img-changepass {
+		height: 170px !important;
+	}
+
+	@media screen and (max-width: 420px) {
+		.img-changepass {
+			display: none !important;
+		}
+	}
 </style>
+<script>
+	var elements = document.querySelectorAll('.active');
+	elements.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	document.getElementById("login").classList.add('active');
+</script>

@@ -7,10 +7,10 @@
   //lướt chuột cố định menu
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
-      $('.header-bottom').addClass('header-bottom_active');
+      $('.header').addClass('header_active');
     }
     else {
-      $('.header-bottom').removeClass('header-bottom_active');
+      $('.header').removeClass('header_active');
     }
   });
 

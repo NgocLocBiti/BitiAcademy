@@ -1,3 +1,31 @@
+<style>
+    .image-container {
+        width: 200px;
+        /* Điều chỉnh kích thước container theo ảnh của bạn */
+        overflow: hidden;
+        /* Ẩn nội dung vượt ra ngoài container */
+        position: relative;
+    }
+
+    .image-container img {
+        width: 100%;
+        /* Kích thước ảnh sẽ giữ nguyên chiều rộng của container */
+        display: block;
+        transition: transform 0.3s;
+        /* Áp dụng hiệu ứng transform trong 0.3 giây */
+    }
+
+    .image-container:hover img {
+        transform: translateY(-50%);
+        /* Di chuyển ảnh lên trên 50% chiều cao của container */
+    }
+
+    /* Optional styles for better presentation */
+    .image-container {
+        margin: 20px;
+        border: 1px solid #ccc;
+    }
+</style>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +36,8 @@
 </head>
 
 <body>
-    <div id="info_account">
-        <h1>TEST THÔNG TIN</h1>
-        <h2 id="change-password">
-            Thay đổi mật khẩu
-        </h2>
-
-    </div>
-    <div class="clear"></div>
-
-    <div class="row " id="changepass">
-        <div class="col-8 pt-2">
-            <h1>TEST PASS</h1>
-            <h2 id="change-info">
-                Thông tin tài khoản
-            </h2>
-        </div>
-        <div class="col-4">
-            <img src="https://i.imgur.com/WczX1Gp.jpg" alt="" style="height: 170px !important;">
-        </div>
+    <div class="image-container">
+        <img src="your-image.jpg" alt="Your Image">
     </div>
 
 
