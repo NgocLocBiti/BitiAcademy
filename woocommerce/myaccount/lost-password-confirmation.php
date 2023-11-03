@@ -1,9 +1,9 @@
 <script>
-    var elements = document.querySelectorAll('.active');
+    var elements = document.querySelectorAll('.is_active');
     elements.forEach(function(element) {
-        element.classList.remove('active');
+        element.classList.remove('is_active');
     });
-    document.getElementById("login").classList.add('active');
+    document.getElementById("login").classList.add('is_active');
 </script>
 <style>
     .woocommerce {
@@ -50,8 +50,8 @@
         }
 
         .woocommerce {
-            width: 99%;
-            margin: -50px 0% -15px 0%;
+            width: 100%;
+            margin: 0 !important;
         }
     }
 
@@ -59,7 +59,7 @@
     @media screen and (max-width: 990px) {
 
         .woocommerce {
-            margin: 0 20% 15%;
+            margin: 0 20% 5%;
         }
     }
 </style>

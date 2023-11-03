@@ -641,9 +641,9 @@ do_action('woocommerce_before_customer_login_form'); ?>
 			display: none;
 		}
 
-		.login_main {
+		/* .login_main {
 			padding: 0px;
-		}
+		} */
 
 		.woocommerce {
 			margin-top: -15%;
@@ -657,7 +657,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 	/*Máy tính bảng */
 	@media screen and (max-width: 990px) {
 		.login_main {
-			padding: 0px 0px 30px 0px;
+			padding: 70px 0px 30px 0px;
 		}
 
 		.login_wrap {
@@ -709,11 +709,11 @@ do_action('woocommerce_before_customer_login_form'); ?>
 			showLoginForm();
 		});
 
-		var elements = document.querySelectorAll('.active');
+		var elements = document.querySelectorAll('.is_active');
 		elements.forEach(function(element) {
-			element.classList.remove('active');
+			element.classList.remove('is_active');
 		});
-		document.getElementById("login").classList.add('active');
+		document.getElementById("login").classList.add('is_active');
 	});
 
 	//Hiện mắt của mật khẩu

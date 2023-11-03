@@ -54,6 +54,16 @@
 		text-transform: uppercase;
 		transition: 0.2s;
 		margin: 15px 40%;
+
+
+	}
+
+	@media screen and (max-width: 420px) {
+		.btn-xac-nhan {
+			width: 250px;
+			margin: 15px 16%;
+			padding: 7px;
+		}
 	}
 
 	.btn-xac-nhan:hover {

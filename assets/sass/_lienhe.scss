@@ -5,6 +5,10 @@
     background: #F2F2F2;
     padding: 48px 0;
 
+    @media screen and (max-width: 420px) {
+        padding: 25px 0;
+    }
+
     &-left {
         display: flex;
         flex-direction: column;
@@ -55,6 +59,9 @@
         line-height: 24px;
         margin: 0px 0px 7px 0px;
 
+        @media screen and (max-width: 990px) {
+            font-size: 14px;
+        }
     }
 
     form .inputBox {
@@ -75,16 +82,29 @@
         border-radius: 5px;
         border: 0.75px solid #CED4DA;
         background: #FFF;
+
+        @media screen and (max-width: 990px) {
+            width: 97.5%;
+        }
+
     }
 
     form textarea {
         width: 97.5%;
         resize: none;
-        height: 15rem;
     }
 
     form .content {
         height: 150px;
+
+        @media screen and (max-width: 990px) {
+            height: 103px;
+        }
+
+        @media screen and (max-width: 780px) {
+            height: 80px;
+        }
+
     }
 
     form .gui-lien-he {
@@ -169,13 +189,18 @@
         border-radius: 10px;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25) inset;
         background: #808080;
+
+        @media screen and (max-width: 420px) {
+            height: 300px;
+        }
+
     }
 
     .wpcf7-response-output {
         border-color: #46b450;
         font-weight: bold;
         border-radius: 10px;
-        margin: 0!important;
+        margin: 0 !important;
     }
 
 }

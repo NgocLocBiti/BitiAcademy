@@ -66,6 +66,8 @@ div.woocommerce form .form-row textarea {
     background: #0065EA;
     color: white;
     padding: 10px;
+    min-width: 260px !important;
+
 }
 
 .has-checkout-layout--multi-step .fc-step__actions .fc-step__next-step:hover {
@@ -94,10 +96,21 @@ div.woocommerce form .form-row textarea {
 
 div.woocommerce .fc-wrapper .fc-checkout-order-review .fc-checkout-order-review__inner {
     box-shadow: 10px 10px 15px 0px #b3b3b359 !important;
+
+    @media screen and (max-width: 420px) {
+        margin: 20px -20px !important;
+        border-radius: 10px;
+        border: 0.5px solid #00000033;
+    }
 }
 
 .fc-checkout-order-review__head .fc-checkout-order-review__header-link {
     color: #0065EA !important;
+
+    @media screen and (max-width: 420px) {
+        padding: 0 !important;
+        font-size: 13px !important;
+    }
 }
 
 body.woocommerce-checkout div.woocommerce .fc-wrapper .fc-checkout-order-review-title {
@@ -110,11 +123,11 @@ body.woocommerce-checkout div.woocommerce .fc-wrapper .fc-checkout-order-review-
 
 // đăng nhập trước khi thanh toán
 body.woocommerce-checkout .fc-content.fc-container {
-    padding: 190px 50px 80px !important;
+    padding: 40px 50px 80px !important;
     border-radius: 10px;
     background: #FFF;
 }
 
-.fc-container .fc-checkout__title{
+.fc-container .fc-checkout__title {
     color: #0065EA;
 }

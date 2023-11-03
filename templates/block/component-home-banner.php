@@ -24,3 +24,10 @@
         </div>
     </div>
 </section>
+<script>
+	var elements = document.querySelectorAll('.is_active');
+	elements.forEach(function(element) {
+		element.classList.remove('is_active');
+	});
+	document.getElementById("home").classList.add('is_active');
+</script>

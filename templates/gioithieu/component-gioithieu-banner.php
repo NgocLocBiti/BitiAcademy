@@ -7,9 +7,9 @@
     <?php endif; ?>
 </section>
 <script>
-    var elements = document.querySelectorAll('.active');
+    var elements = document.querySelectorAll('.is_active');
     elements.forEach(function(element) {
-        element.classList.remove('active');
+        element.classList.remove('is_active');
     });
-    document.getElementById("about").classList.add('active');
+    document.getElementById("about").classList.add('is_active');
 </script>

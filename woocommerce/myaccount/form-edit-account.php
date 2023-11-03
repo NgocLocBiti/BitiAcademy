@@ -379,6 +379,9 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		padding: 5px;
 		border: 2px solid #c1c1c1;
 	}
+	.thongtin-account .bg .tab-content .info p input:focus {
+		border: 2px solid #c1c1c1 !important;
+	}
 
 	@media screen and (max-width: 420px) {
 		.thongtin-account .bg .tab-content .info p input {
@@ -396,11 +399,13 @@ do_action('woocommerce_before_edit_account_form'); ?>
 			margin-left: 0px;
 		}
 	}
+
 	@media screen and (max-width: 770px) {
 		.thongtin-account .bg .tab-content .info span em {
 			margin-left: 140px;
 		}
 	}
+
 	@media screen and (max-width: 420px) {
 		.thongtin-account .bg .tab-content .info span em {
 			margin-left: 0px;
@@ -460,11 +465,13 @@ do_action('woocommerce_before_edit_account_form'); ?>
 			width: 120%;
 		}
 	}
+
 	@media screen and (max-width: 780px) {
 		.thongtin-account .bg .tab-content #changepass p label {
 			width: 70%;
 		}
 	}
+
 	@media screen and (max-width: 420px) {
 		.thongtin-account .bg .tab-content #changepass p label {
 			font-size: 14px;
@@ -505,8 +512,15 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		height: 200px;
 	}
 
+	@media screen and (max-width: 420px) {
+		.change-avatar .change-avatar_img img {
+			width: 160px;
+			height: 160px;
+		}
+	}
+
 	#hk-change-avatar {
-		padding: 0 30px
+		padding: 0 30px;
 	}
 
 	#hk-change-avatar .form-change {
@@ -515,6 +529,11 @@ do_action('woocommerce_before_edit_account_form'); ?>
 
 	#hk-change-avatar .form-change .choose-save {
 		padding-top: 10%;
+	}
+	@media screen and (max-width: 420px) {
+		#hk-change-avatar .form-change .choose-save {
+			padding-top: 0%;
+		}
 	}
 
 	#hk-change-avatar p button {
@@ -546,12 +565,22 @@ do_action('woocommerce_before_edit_account_form'); ?>
 		.img-changepass {
 			display: none !important;
 		}
+
+		.change-avatar {
+			width: 100%;
+			left: 25%;
+		}
+
+		#hk-change-avatar .form-change {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 </style>
 <script>
-	var elements = document.querySelectorAll('.active');
+	var elements = document.querySelectorAll('.is_active');
 	elements.forEach(function(element) {
-		element.classList.remove('active');
+		element.classList.remove('is_active');
 	});
-	document.getElementById("login").classList.add('active');
+	document.getElementById("login").classList.add('is_active');
 </script>

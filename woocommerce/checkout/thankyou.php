@@ -112,7 +112,32 @@ defined('ABSPATH') || exit;
 		box-shadow: -10px 10px 15px 0px #b3b3b359;
 		background: #FFF;
 	}
+
 	.btn-xac-nhan {
 		display: block;
+	}
+
+	.woocommerce ul.order_details li {
+		font-size: 11px;
+	}
+
+	@media screen and (max-width: 420px) {
+		.woocommerce ul.order_details li {
+			font-size: 7px;
+			margin-right: 1em;
+			padding-right: 1em;
+		}
+
+		.woocommerce ul.order_details {
+			padding-left: 0 !important;
+		}
+	}
+
+	.woocommerce ul.order_details {
+		margin: 0 0 1.5em;
+	}
+
+	#goBack {
+		display: none;
 	}
 </style>

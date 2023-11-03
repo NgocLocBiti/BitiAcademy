@@ -16,7 +16,7 @@
                         <i class="fab fa-linkedin"></i>
                         <i class="fab fa-instagram-square"></i>
                     </div>
-                    <p>Cho chúng tôi biết nếu bạn có bất kỳ góp ký nào.</p>
+                    <p>Cho chúng tôi biết nếu bạn có bất kỳ góp ý nào.</p>
                     <?php echo do_shortcode('[contact-form-7 id="5fd063c" title="Liên hệ"]') ?>
                 </div>
             </div>

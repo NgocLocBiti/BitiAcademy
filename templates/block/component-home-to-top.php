@@ -56,6 +56,7 @@
         z-index: 9;
     }
 
+
     @keyframes beat {
         0% {
             transform: scale(1);
@@ -159,7 +160,7 @@
 
     .heart:before {
         z-index: -2;
-        animation: beat-before 1.5s ease 100ms infinite;
+        animation: beat-before 1.5s ease 0.1s infinite alternate;
     }
 
     @keyframes beat-after {
@@ -174,7 +175,7 @@
 
     .heart:after {
         z-index: -1;
-        animation: beat-after 1.5s ease 200ms infinite;
+        animation: beat-after 1.5s ease 0.1s infinite alternate;
     }
 
     @media screen and (max-width: 990px) {

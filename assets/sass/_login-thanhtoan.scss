@@ -1,0 +1,71 @@
+.has-flyout a[data-flyout-toggle][role=button] {
+    cursor: pointer;
+    color: #0065EA;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.has-flyout [data-flyout][data-flyout-modal].is-activated .fc-login-form__inner[data-flyout-content] {
+    border-radius: 15px;
+}
+
+.woocommerce form .form-row label {
+    font-weight: bold;
+}
+
+.fc-login-form__title {
+    margin-top: 28px !important;
+    margin-bottom: 14px !important;
+    font-size: 24px !important;
+    color: #0065EA;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 420px) {
+        font-size: 20px !important;
+    }
+}
+
+.woocommerce form .form-row input.input-text {
+    border-radius: 5px;
+    color: #404040;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #c1c1c1;
+}
+
+.woocommerce-checkout .fc-login-form form.login .form-row {
+    margin: 0 !important;
+}
+
+.woocommerce-checkout .fc-login-form form.login .woocommerce-button.woocommerce-form-login__submit {
+    border-radius: 5px;
+    border: 2px solid #1388ED;
+    color: #fff;
+    background: #1388ed;
+    padding: 7px 20px;
+    font-weight: bold;
+
+    &:hover {
+        color: #0065EA;
+        background: #fff;
+    }
+}
+
+
+.has-flyout [data-flyout][data-flyout-modal].is-activated .fc-login-form__inner[data-flyout-content] {
+    max-width: 500px;
+    padding: 20px !important;
+
+    @media screen and (max-width: 420px) {
+        height: auto !important;
+        width: 330px !important;
+        margin-top: 40% !important;
+        margin-left: 11% !important;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-left: 8% !important;
+    }
+}

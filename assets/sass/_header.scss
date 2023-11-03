@@ -6,7 +6,7 @@
     align-self: stretch;
     background: White;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
-    z-index: 10;
+    z-index: 999;
     position: sticky;
     transition: all 0.7s;
     transition-timing-function: linear;
@@ -635,9 +635,9 @@
                 padding: 0px;
             }
 
-            &.active {
+            &.is_active {
                 .nav__item-icon {
-                    margin-top: -35px;
+                    margin-top: -30px;
                     box-shadow: 0px 0px 16px 0px #4444;
 
                     i {

@@ -222,4 +222,8 @@ do_action('woocommerce_before_cart'); ?>
 		box-shadow: 10px 10px 15px 0px #b3b3b359;
 		background: #FFF;
 	}
+
+	.woocommerce-cart .cart-collaterals .shipping-calculator-button {
+		color: #000415;
+	}
 </style>

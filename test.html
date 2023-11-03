@@ -1,81 +1,24 @@
-<style>
-    .image-container {
-        width: 200px;
-        /* Điều chỉnh kích thước container theo ảnh của bạn */
-        overflow: hidden;
-        /* Ẩn nội dung vượt ra ngoài container */
-        position: relative;
-    }
-
-    .image-container img {
-        width: 100%;
-        /* Kích thước ảnh sẽ giữ nguyên chiều rộng của container */
-        display: block;
-        transition: transform 0.3s;
-        /* Áp dụng hiệu ứng transform trong 0.3 giây */
-    }
-
-    .image-container:hover img {
-        transform: translateY(-50%);
-        /* Di chuyển ảnh lên trên 50% chiều cao của container */
-    }
-
-    /* Optional styles for better presentation */
-    .image-container {
-        margin: 20px;
-        border: 1px solid #ccc;
-    }
-</style>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div class="image-container">
-        <img src="your-image.jpg" alt="Your Image">
-    </div>
-
-
+    <p class="zoom-text">Hover over me to zoom</p>
 </body>
 
 </html>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the elements and buttons
-        const trangChangeInfo = document.getElementById("info_account");
-        const trangChangePass = document.getElementById("changepass");
-        const changPassButton = document.getElementById("change-password");
-        const changeInfoButton = document.getElementById("change-info");
 
-        // Function to show the registration form and hide the login form
-        function changePass() {
-            trangChangeInfo.style.display = "none";
-            trangChangePass.style.display = "block";
-        }
+<style>
+    .zoom-text {
+        transition: transform 0.3s;
+        /* Tạo hiệu ứng transition */
+    }
 
-        // Function to show the login form and hide the registration form
-        function changeInfo() {
-            trangChangeInfo.style.display = "block";
-            trangChangePass.style.display = "none";
-        }
-
-        // Initially, show the login form and hide the registration form
-        changeInfo();
-
-        // Add a click event listener to the "Tạo tài khoản" button
-        changPassButton.addEventListener("click", function () {
-            changePass();
-        });
-
-        // Add a click event listener to the "Đăng nhập" button
-        changeInfoButton.addEventListener("click", function () {
-            changeInfo();
-        });
-
-    });
-</script>
+    .zoom-text:hover {
+        transform: scaleY(1.5);
+        /* Phóng to văn bản khi di chuột vào */
+    }
+</style>
