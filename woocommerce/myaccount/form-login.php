@@ -667,7 +667,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 		.section-inner {
 			padding: 20px 20px 20px 20px;
-			box-shadow:none
+			box-shadow: none
 		}
 
 		.dang_nhap_main button.woocommerce-button {
@@ -730,4 +730,41 @@ do_action('woocommerce_before_customer_login_form'); ?>
 			}
 		});
 	});
+</script>
+
+<!-- Đăng ký -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+	(function($) {
+		$(document).ready(function() {
+			var ajaxUrl = '<?php echo admin_url('admin-ajax.php'); ?>';
+			$('#hk-registerform').submit(function(e) {
+				e.preventDefault();
+				var data = {};
+				var ArrayForm = $(this).serializeArray();
+				$.each(ArrayForm, function() {
+					data[this.name] = this.value;
+				});
+
+				$.ajax({
+					type: "POST",
+					url: ajaxUrl,
+					data: {
+						'action': 'RegisterAction',
+						'userData': data
+					},
+					dataType: "html",
+					beforeSend: function() {},
+					success: function(response) {
+						$('#hk-message').html(response);
+						if (response == 'success') {
+							$("#hk-registerform")[0].reset();
+							$('#hk-message').hide();
+							$('#hk-success').show();
+						}
+					}
+				});
+			});
+		});
+	})(jQuery);
 </script>

@@ -263,11 +263,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  align-self: stretch;
   background: White;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
   z-index: 999;
-  position: sticky;
+  position: sticky !important;
   transition: all 0.7s;
   transition-timing-function: linear;
   top: 0; }
@@ -1188,6 +1187,10 @@ main {
     .home-section3 {
       padding-left: 0px;
       height: 330px; } }
+  @media screen and (max-width: 420px) {
+    .home-section3 {
+      padding-top: 0px !important;
+      height: 285px; } }
   .home-section3 h1 {
     padding-left: 70px;
     height: auto;
@@ -2900,7 +2903,7 @@ main {
   background: var(--White-2-BGR, #F2F2F2); }
   @media screen and (max-width: 990px) {
     .section-tintuc {
-      padding: 110px 0px 40px 0; } }
+      padding: 30px 0px 40px 0; } }
   .section-tintuc-search input {
     display: flex;
     height: 50px;
@@ -3102,12 +3105,9 @@ main {
         overflow: hidden; }
 
 .page-blog {
-  padding-top: 180px;
+  padding-top: 30px;
   background: var(--White-2-BGR, #F2F2F2);
   display: flex; }
-  @media screen and (max-width: 990px) {
-    .page-blog {
-      padding-top: 110px; } }
   .page-blog .sidebar {
     padding: 20px;
     background: #fff;

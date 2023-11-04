@@ -10,6 +10,11 @@
         height: 330px;
     }
 
+    @media screen and (max-width: 420px) {
+        padding-top: 0px !important;
+        height: 285px;
+    }
+
     h1 {
 
         padding-left: 70px;
