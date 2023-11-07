@@ -5,9 +5,23 @@
     background: #fff;
     padding: 48px 0;
 
+    @media screen and (max-width: 420px) {
+        padding: 20px 0;
+    }
+
     img {
         width: 100%;
 
+        @media screen and (max-width: 990px) {
+            height: 340px;
+        }
+
+        @media screen and (max-width: 420px) {
+            height: auto;
+            width: 50%;
+            margin-left: 25%;
+
+        }
     }
 
     &-right {
@@ -55,6 +69,14 @@
         border-radius: 5px;
         border: 0.75px solid #CED4DA;
         background: #FFF;
+
+        @media screen and (max-width: 990px) {
+            width: 385px;
+        }
+
+        @media screen and (max-width: 780px) {
+            width: 360px;
+        }
     }
 
     form .gui-lien-he {
@@ -71,6 +93,12 @@
         background: var(--Lieaner, linear-gradient(90deg, #04C 0%, #006EFF 100%));
         box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.12);
         margin-left: 75%;
+
+        @media screen and (max-width: 990px) {
+            width: 40%;
+            margin-left: 60%;
+        }
+
     }
 
     form .gui-lien-he:hover {

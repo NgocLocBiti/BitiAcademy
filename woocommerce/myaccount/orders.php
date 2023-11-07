@@ -127,6 +127,7 @@ do_action('woocommerce_before_account_orders', $has_orders); ?>
 		border: 1px solid #1388ED;
 		color: #1388ed;
 		background: #FFF;
+		margin-right: 5px;
 	}
 
 	.woocommerce table.my_account_orders .button:hover {

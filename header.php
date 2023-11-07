@@ -27,6 +27,7 @@
                         </div>
                     </div>
                     <div class="header-top-right">
+                        <!-- huong dan tai khoan -->
                         <div class="instruct">
                             <a href="<?php echo get_home_url(); ?>/huong-dan-tai-khoan/" class="">Hướng dẫn tài khoản</a>
                         </div>
@@ -89,31 +90,37 @@
                         </div>
                         <ul class="nav-menu menu">
                             <li>
+                                <i class="fas fa-home-lg"></i>
                                 <a href="<?php echo get_home_url(); ?>/">Trang chủ</a>
                             </li>
                             <li>
+                                <i class="fas fa-info-circle"></i>
                                 <a href="<?php echo get_home_url(); ?>/gioi-thieu">Giới thiệu</a>
                             </li>
                             <li>
+                                <i class="fas fa-book"></i>
                                 <a href="<?php echo get_home_url(); ?>/khoa-dao-tao">Khóa đào tạo</a>
                             </li>
                             <li>
-                                <div class="item">
-                                    <a href="<?php echo get_home_url(); ?>/tin-tuc">Tin tức & sự kiện</a>
-                                    <i class="fas fa-angle-down" id="menu_td"></i>
+                                <div class="items">
+                                    <div class="item">
+                                        <i class="fas fa-newspaper"></i>
+                                        <a href="<?php echo get_home_url(); ?>/tin-tuc">Tin tức & sự kiện</a>
+                                        <i class="fas fa-angle-down" id="menu_td"></i>
+                                    </div>
+                                    <ul class="sub-menu menu" id="menu_td_con">
+                                        <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/su-kien-hoi-thao/">Sự kiện - hội thảo</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/ve-biti-academy/">Về BITI Academy</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/lich-tuyen-sinh/">Lịch tuyển sinh</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/chia-se-kien-thuc/">Chia sẻ kiến thức</a></li>
+                                    </ul>
                                 </div>
-                                <ul class="sub-menu menu" id="menu_td_con">
-                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/su-kien-hoi-thao/">Sự kiện - hội thảo</a></li>
-                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/ve-biti-academy/">Về BITI Academy</a></li>
-                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/lich-tuyen-sinh/">Lịch tuyển sinh</a></li>
-                                    <li><a href="<?php echo get_home_url(); ?>/danh-muc-tin-tuc/chia-se-kien-thuc/">Chia sẻ kiến thức</a></li>
-                                </ul>
                             </li>
                             <li>
+                                <i class="fas fa-phone-office"></i>
                                 <a href="<?php echo get_home_url(); ?>/lien-he">Liên hệ</a>
                             </li>
                         </ul>
-
                         <div class="account">
                             <button class="btn-9">
                                 <a href="<?php echo get_home_url(); ?> /huong-dan-tai-khoan"><span style="color: #ffffff;">Hướng dẫn tài khoản</span></a>

@@ -14,6 +14,10 @@
 		box-shadow: 8px 8px 5px 0px #8888;
 		background: #FFF;
 	}
+
+	a {
+		color: #000000;
+	}
 </style>
 
 <?php
@@ -60,10 +64,10 @@ $allowed_html = array(
 <p>
 	<?php
 	/* translators: 1: Orders URL 2: Address URL 3: Account URL. */
-	$dashboard_desc = __('From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">billing address</a>, and <a href="%3$s">edit your password and account details</a>.', 'woocommerce');
+	$dashboard_desc = __('Từ bảng điều khiển tài khoản của bạn, bạn có thể xem <a href="%1$s">những đơn đặt hàng gần đây</a>, <a href="%3$s">chỉnh sửa mật khẩu và chi tiết tài khoản của bạn</a>.', 'woocommerce');
 	if (wc_shipping_enabled()) {
 		/* translators: 1: Orders URL 2: Addresses URL 3: Account URL. */
-		$dashboard_desc = __('From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a>, and <a href="%3$s">edit your password and account details</a>.', 'woocommerce');
+		$dashboard_desc = __('Từ bảng điều khiển tài khoản của bạn, bạn có thể xem <a href="%1$s">những đơn đặt hàng gần đây</a>, <a href="%3$s">chỉnh sửa mật khẩu và chi tiết tài khoản của bạn</a>.', 'woocommerce');
 	}
 	printf(
 		wp_kses($dashboard_desc, $allowed_html),

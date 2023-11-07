@@ -1,5 +1,5 @@
 <div class="account-breadcrumb">
-	<img src="https://s3-alpha-sig.figma.com/img/3188/4da6/15f1c7f0449c5987062c0341f4dd5d03?Expires=1699228800&Signature=bjUe0ZNySnKwA2oTa0RlAYcSvg-gld6T-YSg3j40bLo09xg~pmCfQwRP57kHCzv1H7FxO1p~Aartw0ui6RYllV1iV1J~SvgbEwIRb5ydV~fVLoPl8Pjo6WoZ88zZdMfip55qOfP5tUrE7JKMb-mVJg8Rc4o55HzKg3R7jvUdfr~PJ3KlhexOPCj-ZulHC~XVtJq8lPSyIa04kam~7Q0JYkU4u8aSzqj-cZqouFELKOpYS8QGWHvp6OFUTbqdxwrDmSAz3wX0Ts9Bkg1GF9W9EpsZ839M2R5RjiSdMusGLNu06c1VveE7ZrKgNV604yVNjH0QkPYMhiNzYLJw7VecUQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+	<img src="https://i.imgur.com/7nXnW5q.jpg" alt="">
 	<?php
 	if (is_user_logged_in()) {
 		// Lấy thông tin của người dùng hiện tại

@@ -61,6 +61,7 @@
             align-items: flex-start;
             gap: 20px;
 
+            // huong dan tai khoan
             .instruct {
                 display: flex;
                 height: 40px;
@@ -139,6 +140,7 @@
                 @media screen and (max-width: 990px) {
                     height: 70px;
                 }
+
                 @media screen and (max-width: 420px) {
                     height: 50px;
                 }
@@ -362,28 +364,58 @@
                         font-weight: 600;
                         border-top: 2px solid rgb(169, 184, 195);
                         margin-bottom: 0 !important;
+                        display: flex;
 
-                        .item {
-                            display: flex;
-                            justify-content: space-between;
+                        i {
+                            font-size: 16px;
+                            margin: 10.5px 10px;
+                            color: #6c757d;
+                        }
 
-                            a {
-                                text-decoration: none;
-                                color: #6c757d;
-                                display: block;
-                                padding: 7px 20px;
-                                transition: background-color 0.3s;
+                        .items {
+                            // display: flex;
+                            width: 100%;
 
-                                &:hover {
-                                    color: #0065EA;
-                                    font-weight: bold;
+                            .item {
+                                display: flex;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #6c757d;
+                                    display: block;
+                                    padding: 7px 5px;
+                                    transition: background-color 0.3s;
+
+                                    &:hover {
+                                        color: #0065EA;
+                                        font-weight: bold;
+                                    }
+                                }
+
+                                i {
+                                    font-size: 16px;
+                                    margin: 10.5px 10px;
+                                    color: #6c757d;
+                                }
+
+                                .fa-angle-down {
+                                    position: relative;
+                                    left: 30%;
                                 }
                             }
 
-                            i {
-                                font-size: 16px;
-                                margin: 10.5px 10px;
-                                color:  #6c757d;
+                            ul {
+                                margin-left: 10px;
+
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        color: #6c757d;
+                                        display: block;
+                                        padding: 7px 20px;
+                                        transition: background-color 0.3s;
+                                    }
+                                }
                             }
                         }
 
@@ -391,26 +423,12 @@
                             text-decoration: none;
                             color: #6c757d;
                             display: block;
-                            padding: 7px 20px;
+                            padding: 7px 5px;
                             transition: background-color 0.3s;
 
                             &:hover {
                                 color: #0065EA;
                                 font-weight: bold;
-                            }
-                        }
-
-                        ul {
-                            margin-left: 10px;
-
-                            li {
-                                a {
-                                    text-decoration: none;
-                                    color: #6c757d;
-                                    display: block;
-                                    padding: 7px 20px;
-                                    transition: background-color 0.3s;
-                                }
                             }
                         }
                     }
@@ -518,6 +536,7 @@
                         --progress: -100%;
                     }
                 }
+
             }
         }
 
@@ -698,6 +717,7 @@
 
 .header_active {
     top: -50px;
+
     @media screen and (max-width:990px) {
         top: 0;
     }

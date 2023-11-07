@@ -49,6 +49,10 @@ div.woocommerce form .form-row textarea {
     border: none;
 }
 
+.woocommerce form .form-row input.input-text:focus{
+    border: 2px solid #c1c1c1 !important;
+}
+
 .has-checkout-layout--multi-step .fc-wrapper .fc-step__substep-save {
     background: #0065EA;
     color: white;
