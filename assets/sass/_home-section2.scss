@@ -3,7 +3,12 @@
     height: 500px;
     background: #F2F2F2;
     position: relative;
-    @media screen    and (max-width: 990px   ) {
+    // animation-name: fadeUp;
+    // animation-duration: 2s;
+    // animation-delay: 0.2s;
+    // animation-fill-mode: both;
+
+    @media screen and (max-width: 990px) {
         height: 400px;
 
     }
@@ -16,7 +21,7 @@
         height: 295px;
         margin-top: 180px;
 
-        @media screen    and (max-width: 990px   ) {
+        @media screen and (max-width: 990px) {
             margin-top: 100px;
         }
 
@@ -26,7 +31,7 @@
             position: absolute;
             /* Đặt là absolute để không ảnh hưởng đến kích thước của background */
 
-            @media screen    and (max-width: 990px   ) {
+            @media screen and (max-width: 990px) {
                 left: -5%;
             }
 
@@ -34,12 +39,12 @@
                 width: 445px;
                 height: 474px;
 
-                @media screen    and (max-width: 990px   ) {
+                @media screen and (max-width: 990px) {
                     width: 419px;
                     height: 370px;
                 }
 
-                @media screen and (max-width: 420px ) {
+                @media screen and (max-width: 420px) {
                     display: none;
                 }
             }
@@ -55,18 +60,25 @@
         .item-info {
             display: flex;
             width: 650px;
-            padding: 35px 10px;
+            padding: 70px 10px;
             flex-direction: column;
             align-items: flex-start;
             margin-left: 46%;
             text-align: justify;
 
-            @media screen    and (max-width: 990px   ) {
+            @media screen and (max-width: 1230px) {
+                width: 550px;
+                padding: 65px 10px;
+                margin-left: 39%;
+            }
+
+            @media screen and (max-width: 990px) {
                 width: 55%;
                 padding: 65px 10px;
                 margin-left: 39%;
             }
-            @media screen and (max-width: 420px ) {
+
+            @media screen and (max-width: 420px) {
                 width: 85%;
                 padding: 60px 30px;
                 margin-left: 0px;
@@ -82,6 +94,7 @@
                 @media screen and (max-width: 990px) {
                     font-size: 27px;
                 }
+
                 @media screen and (max-width: 420px) {
                     font-size: 20px;
                 }
@@ -96,7 +109,7 @@
                 line-height: normal;
                 margin-top: 10px;
 
-                @media screen    and (max-width: 990px   ) {
+                @media screen and (max-width: 990px) {
                     font-size: 14px;
                 }
             }
@@ -113,7 +126,7 @@
     transform: rotate(90deg);
     z-index: 2;
 
-    @media screen    and (max-width: 990px   ) {
+    @media screen and (max-width: 990px) {
         top: 58%;
         right: -5%;
     }

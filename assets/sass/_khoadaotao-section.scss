@@ -31,6 +31,11 @@
                         padding: 24px 58px;
                         margin: 0px 5px;
 
+                        @media screen and (max-width: 1230px) {
+                            padding: 24px 64px !important;
+                            font-size: 18px !important;
+                        }
+
                         @media screen and (max-width: 990px) {
                             padding: 24px 15px !important;
                             font-size: 18px !important;
@@ -57,6 +62,11 @@
                         padding: 24px 58px;
                         border-right: 1px solid var(--Lieaner, #04C);
                         background: var(--Lieaner, linear-gradient(90deg, #04C 0%, #006EFF 100%));
+
+                        @media screen and (max-width: 1230px) {
+                            padding: 24px 64px !important;
+                            font-size: 18px !important;
+                        }
 
                         @media screen and (max-width: 990px) {
                             padding: 24px 15px !important;

@@ -1,5 +1,4 @@
-<section class="home-section1">
-
+<section class="home-section1 section">
     <div class="home-section1-top">
         <?php if (have_rows('home-section1', 2)) : ?>
             <?php while (have_rows('home-section1', 2)) : the_row();

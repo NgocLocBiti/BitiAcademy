@@ -196,6 +196,9 @@ do_action('woocommerce_before_cart'); ?>
 		padding: 10px;
 	}
 
+	.woocommerce table.shop_table td{
+		padding: 13px 13px;
+	}
 	.woocommerce-cart table.cart td.actions .coupon .input-text {
 		width: 100px;
 	}

@@ -138,7 +138,7 @@
                 <div class="search">
                     <div class="header-bottom-search" onclick="openSearchHero()" fdprocessedid="lcl5df">
                         <div class="background">
-                            <i class="far fa-search" style="color: #ffffff;"></i>
+                        <i class="fas fa-search" style="color: #ffffff;"></i>
                         </div>
                     </div>
                     <div class="header-bottom-search-form">
@@ -228,6 +228,7 @@
         <!-- End Header -->
 
         <script>
+            // SHOW MENU
             document.getElementById("menu-toggle").addEventListener("click", function() {
                 var mobileMenu = document.getElementById("mobile-overlay-menu");
                 var overlay = document.getElementById("overlay");
@@ -242,15 +243,33 @@
                 overlay.style.display = "none";
             });
 
-            (function($) {
-                $(document).ready(function() {
-                    $('#menu_td').click(function(e) {
-                        //   $('#menu_tp').hide(); // Hide the parent menu item
-                        $('#menu_td_con').toggle('active'); // Show the submenu
-                    });
-                });
-            })(jQuery);
+            // (function($) {
+            //     $(document).ready(function() {
+            //         $('#menu_td').click(function(e) {
+            //             //   $('#menu_tp').hide(); // Hide the parent menu item
+            //             $('#menu_td_con').toggle('active'); // Show the submenu
+            //         });
+            //     });
+            // })(jQuery);
+            // SHOW MENU MOBILE 
+            document.addEventListener("DOMContentLoaded", function() {
+                var menuTd = document.getElementById("menu_td");
+                var menuTdCon = document.getElementById("menu_td_con");
 
+                menuTd.addEventListener("click", function() {
+                    // Toggle visibility of sub-menu
+                    if (menuTdCon.style.display === "block") {
+                        menuTdCon.style.display = "none";
+                    } else {
+                        menuTdCon.style.display = "block";
+                    }
+
+                    // Change the icon
+                    menuTd.classList.toggle("fa-angle-down");
+                    menuTd.classList.toggle("fa-angle-up");
+                });
+            });
+            // ACTIVE MENU BOTTOM
             const list = document.querySelectorAll(".nav__item");
             list.forEach((item) => {
                 item.addEventListener("click", () => {

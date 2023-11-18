@@ -14,14 +14,36 @@
     }
   });
 
+  // Đổi Log out thành Đăng xuất
+  var logoutLink = document.querySelector('li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout a');
+
+  // Kiểm tra xem thẻ <a> có tồn tại không
+  if (logoutLink) {
+    // Thay đổi nội dung của thẻ <a>
+    logoutLink.textContent = 'Đăng xuất';
+  }
+
+  // Lướt chuôt hiển thị hiệu ứng
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+
+    function checkScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        const scrollY = window.scrollY;
+
+        if (scrollY > sectionTop - sectionHeight / 2 && scrollY < sectionTop + sectionHeight / 2) {
+          section.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Kiểm tra khi trang được tải
+  });
+
+
 })(jQuery);
-
-// DARK MODE
-const body = document.querySelector('body');
-const toggle = document.querySelector('#toggle');
-
-toggle.addEventListener('change', () => {
-  body.classList.toggle('dark');
-});
 
 

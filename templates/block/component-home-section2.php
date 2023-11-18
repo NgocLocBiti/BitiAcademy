@@ -1,4 +1,4 @@
-<section class="home-section2">
+<section class="home-section2 section">
     <div id="home-section2" class="owl-carousel owl-theme">
         <?php if (have_rows('home-section2', 2)) : ?>
             <?php while (have_rows('home-section2', 2)) : the_row();

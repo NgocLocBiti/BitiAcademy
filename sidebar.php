@@ -32,6 +32,10 @@
         ?>
     <?php endif; ?>
     <div class="image-box">
-        <img src="https://s3-alpha-sig.figma.com/img/2b40/a64e/aa84813f0646ab1f7360531cae74e914?Expires=1699833600&Signature=dgNUDqeEvYCsc0~UuU2X88nzbcp223q8Oa~Q3qnS9IXbrK63F~DtMPYTsweLkwTvT5d3lMzZuv7Dmtt~dwZVZ9-QgBqjOP5QCIvtsMnGgodaNzZyQGNPjKe6B44GSo3WfxXe-pwMn5ANzO237z-Ru7PrJ1LREiruWO7ylNESDtzVlPOmnYWgXsQqTITVJT008xfMUjUxya3Vo1k3qbsfEA1VaVOrsargWaeuMBk4zvURU53E6zfKg06yolVJ60UBg7FNVRYl~rpkWnGQLwg2DIpW8ZFHExFLNVV4Db6JieUrBnNh4kUdHjpsk5ASmK3xv79aoHccL3aulXgOyZP9ig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+        <?php
+        $image = get_field('img-tintuc', 2);
+        if (!empty($image)) : ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="" />
+        <?php endif; ?>
     </div>
 </div>

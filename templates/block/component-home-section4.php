@@ -1,4 +1,4 @@
-<section class="home-section4">
+<section class="home-section4 section">
     <?php if (have_rows('home-section4', 2)) : ?>
         <?php while (have_rows('home-section4', 2)) : the_row();
             $title  = get_sub_field('title');

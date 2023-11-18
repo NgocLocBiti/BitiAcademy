@@ -383,7 +383,7 @@ main {
 @import "gioithieu";
 @import "khoadaotao";
 @import "huongdantaikhoan";
-@import "khoahoclienquan"; 
+@import "khoahoclienquan";
 @import "chitietkhoahoc";
 @import "lienhe";
 @import "tintuc";
@@ -396,3 +396,14 @@ main {
 @import "xacnhanchuyenkhoan";
 @import "login-thanhtoan";
 @import "footer";
+
+.section {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.9s, transform 0.9s;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateX(0);
+}

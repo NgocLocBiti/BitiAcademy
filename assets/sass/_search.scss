@@ -175,3 +175,17 @@
         }
     }
 }
+
+.yith-wcan-filters .yith-wcan-filter .yith-wcan-dropdown.open {
+    border-color: #1388eda6;
+    box-shadow: 0 0 7px 0 #1388eda6;
+}
+
+.yith-wcan-filters .yith-wcan-filter .filter-items .filter-item.active>a{
+    color: #1388ED;
+}
+
+.yith-wcan-filters .yith-wcan-filter .yith-wcan-dropdown .dropdown-wrapper{
+    box-shadow: 0 0 7px 0 #1388eda6 !important;
+    border: 1px solid #1388eda6 !important;
+}

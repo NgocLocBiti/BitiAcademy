@@ -1,26 +1,26 @@
 <div class="top-down">
     <div class="heart">
         <span>
-            <a target="_blank" href="">
+            <a target="_blank" href="http://m.me/100629231775942">
                 <i class="fab fa-facebook-messenger"></i>
             </a>
         </span>
     </div>
     <div class="heart">
         <span>
-            <a class="zalo" target="_blank" href="" style="font-size: 14px;">
+            <a class="zalo" target="_blank" href="https://zalo.me/091.553.1379" style="font-size: 14px;">
                 Zalo
             </a>
         </span>
     </div>
     <div class="heart">
         <span>
-            <a href=""> <i class="fal fa-phone"></i></a>
+            <a href="Tel: 039.954.9903"> <i class="fal fa-phone"></i></a>
             <p></p>
         </span>
     </div>
 
-    <div id="bottom_to_top" onclick="topFunction()" style="bottom: 20px;">
+    <div id="bottom_to_top" onclick="topFunction()">
         <div class="h-100 d-flex justify-content-center align-items-center">
             <i class="fal fa-chevron-up"></i>
         </div>
@@ -29,23 +29,32 @@
 
 <script>
     //bottom to top
-    let mybutton = document.getElementById("bottom_to_top");
     window.onscroll = function() {
-        scrollFunction()
+        topFunction();
     };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            mybutton.style.display = "block";
+    var toTop = document.getElementById("bottom_to_top");
+
+
+
+    function topFunction() {
+        if (window.scrollY >= 300) {
+            if (window.innerWidth >= 1200) {
+                // Laptop or larger screen
+                toTop.style.bottom = "20px";
+            } else {
+                // Mobile or smaller screen
+                toTop.style.bottom = "70px";
+            }
         } else {
-            mybutton.style.display = "none";
+            toTop.style.bottom = "-100px";
         }
     }
 
-    function topFunction() {
+    toTop.addEventListener('click', () => {
         document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    })
 </script>
 
 <style>
@@ -105,7 +114,13 @@
         background: transparent;
         border: 2px solid #3193F6;
         color: #3193F6;
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: -100px;
+        right: 30px;
+        transition: 0.5s ease;
     }
 
     @media(max-width: 576px) {
@@ -127,7 +142,6 @@
     .heart:before {
         content: "";
         position: absolute;
-        width: 100%;
         height: 100%;
         top: 0;
         left: 0;
@@ -180,15 +194,15 @@
 
     @media screen and (max-width: 990px) {
         .top-down {
-            bottom: 80px;
-            right: 25px;
+            bottom: 100px;
+            right: 30px;
         }
     }
 
     @media screen and (max-width: 420px) {
         .top-down {
-            bottom: 70px;
-            right: 15px;
+            bottom: 95px;
+            right: 12px;
         }
     }
 </style>

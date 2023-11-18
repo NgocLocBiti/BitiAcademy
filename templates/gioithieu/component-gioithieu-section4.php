@@ -1,5 +1,5 @@
-<section class="gioithieu-section4">
-    <div class="container">
+<section class="gioithieu-section4 ">
+    <div class="container section">
         <div class="title">
             <?php if (have_rows('gioithieu-section4')) : ?>
                 <?php while (have_rows('gioithieu-section4')) : the_row();

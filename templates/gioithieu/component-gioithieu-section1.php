@@ -1,5 +1,5 @@
-<section class="gioithieu-section1">
-    <div class="container">
+<section class="gioithieu-section1 ">
+    <div class="container section">
         <?php if (have_rows('gioithieu-section1')) : ?>
             <?php while (have_rows('gioithieu-section1')) : the_row();
                 $sub_title  = get_sub_field('sub-title');

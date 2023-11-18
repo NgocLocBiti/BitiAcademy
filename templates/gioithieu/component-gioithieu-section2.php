@@ -1,5 +1,5 @@
-<section class="gioithieu-section2">
-    <div class="images">
+<section class="gioithieu-section2 ">
+    <div class="images section">
         <?php if (have_rows('gioithieu-section2')) : ?>
             <?php while (have_rows('gioithieu-section2')) : the_row();
                 $image  = get_sub_field('img');

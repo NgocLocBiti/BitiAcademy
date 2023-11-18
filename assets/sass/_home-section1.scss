@@ -4,6 +4,23 @@
         flex-direction: column;
         align-self: stretch;
         background: #F2F2F2;
+        
+        // animation-name: fadeInLeft;
+        // animation-duration: 2s;
+        // animation-delay: 0.2s;
+        // animation-fill-mode: both;
+
+        // @keyframes fadeInLeft {
+        //     from {
+        //         opacity: 0;
+        //         transform: translateX(-40px);
+        //     }
+
+        //     to {
+        //         opacity: 1;
+        //         transform: translateX(0px);
+        //     }
+        // }
 
         @media screen and (max-width: 990px) {
             padding: 0px 20px;
@@ -90,6 +107,9 @@
                         line-height: 133px;
                         padding: 10px 10px;
 
+                        @media screen and (max-width: 1230px) {
+                            font-size: 19px;
+                        }
                         @media screen and (max-width: 990px) {
                             font-size: 18px;
                             line-height: 170px;
